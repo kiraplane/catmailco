@@ -19,6 +19,7 @@ import {
   Wand2,
 } from 'lucide-react';
 import type { Locale } from 'next-intl';
+import Image from 'next/image';
 
 const gameSrc = siteFacts.browserGameUrl;
 const posterSrc = siteFacts.officialHeroImage;
@@ -31,6 +32,9 @@ const guideIcons = {
 
 export function OrbPlayOnlinePage({ locale }: { locale?: Locale }) {
   const content = getPlayOnlineContent(locale);
+  const videoWatchUrl = `https://www.youtube.com/watch?v=${content.media.video.id}`;
+  const videoEmbedUrl = `https://www.youtube-nocookie.com/embed/${content.media.video.id}`;
+  const videoThumbnailUrl = `https://i.ytimg.com/vi/${content.media.video.id}/hq720.jpg`;
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -56,6 +60,32 @@ export function OrbPlayOnlinePage({ locale }: { locale?: Locale }) {
         gamePlatform: ['Web Browser', 'Windows', 'macOS'],
         url: `${siteFacts.domain}/play-online`,
         sameAs: [siteFacts.officialSteamUrl, siteFacts.officialItchUrl],
+      },
+      {
+        '@type': 'HowTo',
+        '@id': `${siteFacts.domain}/play-online#how-to-play`,
+        name: content.howTitle,
+        description: content.howBody,
+        step: content.howCards.map((step, index) => ({
+          '@type': 'HowToStep',
+          position: index + 1,
+          name: step.label,
+          text: step.body,
+        })),
+      },
+      {
+        '@type': 'VideoObject',
+        '@id': `${siteFacts.domain}/play-online#official-trailer`,
+        name: content.media.video.title,
+        description: content.media.body,
+        thumbnailUrl: [videoThumbnailUrl],
+        uploadDate: '2026-06-23',
+        url: videoWatchUrl,
+        embedUrl: videoEmbedUrl,
+        author: {
+          '@type': 'Organization',
+          name: siteFacts.creator,
+        },
       },
     ],
   };
@@ -175,18 +205,82 @@ export function OrbPlayOnlinePage({ locale }: { locale?: Locale }) {
             </p>
           </div>
 
-          <div className="grid gap-3 sm:grid-cols-2">
-            {content.howCards.map((item) => (
-              <div
+          <ol className="grid gap-3 sm:grid-cols-2">
+            {content.howCards.map((item, index) => (
+              <li
                 key={item.label}
                 className="rounded-lg border border-[#4B6B66] bg-[#1B2630] p-5"
               >
-                <h3 className="font-display text-xl font-bold">{item.label}</h3>
+                <div className="flex size-9 items-center justify-center rounded-lg bg-[#FFB68A] text-sm font-black text-[#33241B]">
+                  {index + 1}
+                </div>
+                <h3 className="mt-4 font-display text-xl font-bold">
+                  {item.label}
+                </h3>
                 <p className="mt-2 text-sm leading-7 text-[#CDEAE7]">
                   {item.body}
                 </p>
-              </div>
+              </li>
             ))}
+          </ol>
+        </Container>
+      </section>
+
+      <section
+        id="official-media"
+        className="border-[#4B6B66] border-b bg-[#1B2630] py-12"
+      >
+        <Container className="space-y-8 px-4">
+          <div className="max-w-3xl">
+            <p className="font-semibold uppercase tracking-[0.18em] text-[#FFB68A]">
+              {content.media.eyebrow}
+            </p>
+            <h2 className="mt-2 font-display text-3xl font-black">
+              {content.media.title}
+            </h2>
+            <p className="mt-4 text-sm leading-7 text-[#CDEAE7]">
+              {content.media.body}
+            </p>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
+            <figure className="space-y-3">
+              <div className="overflow-hidden rounded-lg border border-[#4B6B66] bg-[#111915] shadow-2xl shadow-black/25">
+                <iframe
+                  src={videoEmbedUrl}
+                  title={content.media.video.title}
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  className="aspect-video w-full"
+                />
+              </div>
+              <figcaption className="text-sm leading-7 text-[#CDEAE7]">
+                {content.media.video.caption}
+              </figcaption>
+            </figure>
+
+            <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
+              {content.media.screenshots.map((image) => (
+                <figure
+                  key={image.src}
+                  className="overflow-hidden rounded-lg border border-[#4B6B66] bg-[#111915]"
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    width={600}
+                    height={338}
+                    sizes="(min-width: 1024px) 32vw, (min-width: 640px) 33vw, 100vw"
+                    className="aspect-video w-full object-cover"
+                  />
+                  <figcaption className="p-4 text-sm leading-6 text-[#CDEAE7]">
+                    {image.caption}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
           </div>
         </Container>
       </section>

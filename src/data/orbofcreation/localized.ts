@@ -105,6 +105,21 @@ export interface PlayOnlineContent {
     label: string;
     body: string;
   }>;
+  media: {
+    eyebrow: string;
+    title: string;
+    body: string;
+    screenshots: Array<{
+      src: string;
+      alt: string;
+      caption: string;
+    }>;
+    video: {
+      id: string;
+      title: string;
+      caption: string;
+    };
+  };
   afterEyebrow: string;
   afterTitle: string;
   guideLinks: Array<{
@@ -357,28 +372,67 @@ const playOnlineContent: PlayOnlineContent = {
   ],
   downloadGuide: 'Read safe download guide',
   officialItch: 'Open official itch.io page',
-  howEyebrow: 'Before you start',
-  howTitle: 'Give the WebGL build time to load',
+  howEyebrow: 'How to play',
+  howTitle: 'Play Orb of Creation online in a clean first run',
   howBody:
-    'The Unity data file is large. If you see a dark or gray screen, wait before refreshing. Once loaded, use the toolbar to reload, fullscreen, or open the game directly.',
+    'The browser build is best when you play deliberately. Load the game, watch one bottleneck at a time, and use spells and upgrades as tests instead of clicking every new option immediately.',
   howCards: [
     {
-      label: 'Use desktop when possible',
-      body: 'The interface depends on reading tooltips and managing systems, so desktop browsers are much more comfortable than phones.',
+      label: 'Let the build finish loading',
+      body: 'Click Run game, wait through the Unity load, and give the first dark or gray screen a moment before refreshing.',
     },
     {
-      label: 'Check the version',
-      body: 'Browser play teaches the feel of Orb of Creation, but the complete Steam 1.0 release has newer systems and balance.',
+      label: 'Start with the visible wall',
+      body: 'Look at the next cost, then identify which resource, capacity, recharge, or spell effect is stopping progress.',
     },
     {
-      label: 'Read after hitting a wall',
-      body: 'When progress slows, use the spells, research, rituals, or alchemy guides instead of randomly buying upgrades.',
+      label: 'Cast spells with a purpose',
+      body: 'Use spells to push the resource you need right now. If a spell feels weak, test power, recharge, or related resource quality before abandoning it.',
     },
     {
-      label: 'Avoid mirrors',
-      body: 'Use this page, Steam, and official itch.io. Do not download APK mirrors or save editors.',
+      label: 'Buy after you understand the payoff',
+      body: 'Read tooltips before spending. A smaller upgrade that fixes the active bottleneck can beat a bigger-looking general bonus.',
+    },
+    {
+      label: 'Move between systems slowly',
+      body: 'When research, alchemy, druidry, or rituals open, change one thing at a time so you can see which layer actually helped.',
+    },
+    {
+      label: 'Protect the browser save',
+      body: 'Stay in the same browser profile, avoid private windows, and export/import saves when available before clearing site data.',
     },
   ],
+  media: {
+    eyebrow: 'Official media',
+    title: 'Orb of Creation screenshots and trailer',
+    body: 'These Steam store screenshots show the spellbook, research, and druidry interfaces players meet as the run expands. The embedded trailer is the official 1.0 release trailer from MarpleGames; use it as visual context while the playable browser build remains the older itch WebGL version.',
+    screenshots: [
+      {
+        src: '/orbofcreation/screenshots/orb-of-creation-spells.jpg',
+        alt: 'Orb of Creation spellbook screenshot with Gather Knowledge tooltip',
+        caption:
+          'Spellbook play starts by reading costs, cooldowns, and the resource each spell is meant to solve.',
+      },
+      {
+        src: '/orbofcreation/screenshots/orb-of-creation-research.jpg',
+        alt: 'Orb of Creation research screen with concepts and scholar upgrades',
+        caption:
+          'Research choices become more valuable when they connect directly to your current spell or resource wall.',
+      },
+      {
+        src: '/orbofcreation/screenshots/orb-of-creation-druidry.jpg',
+        alt: 'Orb of Creation druidry screen with plant plots and physical shaping',
+        caption:
+          'Later systems like druidry reward patient setup instead of constant broad spending.',
+      },
+    ],
+    video: {
+      id: 'o1E1gSOUpPs',
+      title: 'Orb of Creation 1.0 official trailer',
+      caption:
+        'Official MarpleGames 1.0 release trailer for the current Steam version.',
+    },
+  },
   afterEyebrow: 'Next steps',
   afterTitle: 'Turn the first session into a better run',
   guideLinks: [
