@@ -52,6 +52,53 @@ const retiredPublicRouteRedirects: Array<{
   { pattern: /^\/moonlight-peaks-switch(?:\/.*)?$/, target: '/switch' },
   { pattern: /^\/moonlight-peaks-switch-2(?:\/.*)?$/, target: '/switch' },
   { pattern: /^\/moonlight-peaks-steam-deck(?:\/.*)?$/, target: '/steam-deck' },
+  { pattern: /^\/moonlight-peaks-database(?:\/.*)?$/, target: '/database' },
+  {
+    pattern: /^\/moonlight-peaks-character-database(?:\/.*)?$/,
+    target: '/database/characters',
+  },
+  {
+    pattern: /^\/moonlight-peaks-characters-database(?:\/.*)?$/,
+    target: '/database/characters',
+  },
+  {
+    pattern: /^\/moonlight-peaks-families(?:\/.*)?$/,
+    target: '/database/families',
+  },
+  {
+    pattern: /^\/moonlight-peaks-family-database(?:\/.*)?$/,
+    target: '/database/families',
+  },
+  {
+    pattern: /^\/moonlight-peaks-locations(?:\/.*)?$/,
+    target: '/database/locations',
+  },
+  {
+    pattern: /^\/moonlight-peaks-location-database(?:\/.*)?$/,
+    target: '/database/locations',
+  },
+  { pattern: /^\/moonlight-peaks-items(?:\/.*)?$/, target: '/database/items' },
+  { pattern: /^\/moonlight-peaks-tools(?:\/.*)?$/, target: '/tools' },
+  {
+    pattern: /^\/moonlight-peaks-platform-picker(?:\/.*)?$/,
+    target: '/tools/platform-picker',
+  },
+  {
+    pattern: /^\/moonlight-peaks-romance-tracker(?:\/.*)?$/,
+    target: '/tools/romance-tracker',
+  },
+  {
+    pattern: /^\/moonlight-peaks-item-tracker(?:\/.*)?$/,
+    target: '/tools/item-tracker',
+  },
+  {
+    pattern: /^\/moonlight-peaks-farming-calculator(?:\/.*)?$/,
+    target: '/tools/farming-profit-calculator',
+  },
+  {
+    pattern: /^\/moonlight-peaks-crop-calculator(?:\/.*)?$/,
+    target: '/tools/farming-profit-calculator',
+  },
   { pattern: /^\/moonlight-peaks-characters(?:\/.*)?$/, target: '/characters' },
   { pattern: /^\/moonlight-peaks-romance(?:\/.*)?$/, target: '/romance' },
   { pattern: /^\/moonlight-peaks-gifts(?:\/.*)?$/, target: '/gifts' },

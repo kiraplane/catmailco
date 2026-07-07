@@ -296,6 +296,12 @@
       "platforms": {
         "title": "Platforms"
       },
+      "database": {
+        "title": "Database"
+      },
+      "tools": {
+        "title": "Tools"
+      },
       "romance": {
         "title": "Romance"
       },
@@ -316,7 +322,7 @@
       }
     },
     "footer": {
-      "tagline": "Independent Moonlight Peaks wiki for launch setup, platforms, romance, gifts, farming, magic, Nokturna, and safe links.",
+      "tagline": "Independent Moonlight Peaks wiki for launch setup, database, tools, platforms, romance, farming, magic, Nokturna, and safe links.",
       "start": {
         "title": "Start",
         "items": {
@@ -337,6 +343,26 @@
           "magic": "Magic",
           "nokturna": "Nokturna",
           "walkthrough": "Walkthrough"
+        }
+      },
+      "database": {
+        "title": "Database",
+        "items": {
+          "all": "Database Hub",
+          "characters": "Characters",
+          "families": "Families",
+          "locations": "Locations",
+          "items": "Items"
+        }
+      },
+      "tools": {
+        "title": "Tools",
+        "items": {
+          "all": "Tools Hub",
+          "platformPicker": "Platform Picker",
+          "romanceTracker": "Romance Tracker",
+          "itemTracker": "Item Tracker",
+          "farmingCalculator": "Farming Calculator"
         }
       },
       "official": {

@@ -5,12 +5,13 @@ import type { NestedMenuItem } from '@/types';
 import {
   BookOpen,
   Boxes,
+  Database,
   Download,
   Gamepad2,
   Heart,
   MessageCircle,
-  Moon,
   Sparkles,
+  Wrench,
 } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
@@ -31,6 +32,18 @@ export function useNavbarLinks(): NestedMenuItem[] {
       icon: <Gamepad2 className="size-4" />,
     },
     {
+      title: t('database.title'),
+      href: Routes.Database,
+      external: false,
+      icon: <Database className="size-4" />,
+    },
+    {
+      title: t('tools.title'),
+      href: Routes.Tools,
+      external: false,
+      icon: <Wrench className="size-4" />,
+    },
+    {
       title: t('romance.title'),
       href: Routes.Romance,
       external: false,
@@ -41,12 +54,6 @@ export function useNavbarLinks(): NestedMenuItem[] {
       href: Routes.Farming,
       external: false,
       icon: <Sparkles className="size-4" />,
-    },
-    {
-      title: t('magic.title'),
-      href: Routes.Magic,
-      external: false,
-      icon: <Moon className="size-4" />,
     },
     {
       title: t('nokturna.title'),

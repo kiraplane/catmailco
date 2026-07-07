@@ -13,7 +13,7 @@
 - GitHub 仓库名：`moonlightpeaks`
 - Cloudflare Worker 项目名：`moonlightpeaks`
 - 域名：`www.moonlightpeaks.org`
-- GA 媒体资源：等待本地凭据/授权确认后创建
+- GA 媒体资源：已创建 property `544479490`，measurement ID `G-FWKR2Z78CH`
 
 ## 2. 调研结论
 
@@ -50,6 +50,15 @@ OpenClaw keyword API 尝试：
 | moonlight peaks steam deck | Handheld PC/settings | `/steam-deck` | P0 | keep | Suggest + Steam specs | Do not claim Verified |
 | moonlight peaks romance options | Romance/dateables | `/romance` | P0 | keep | Suggest + Steam two dozen romanceable | Relationship route |
 | moonlight peaks characters | Residents/families | `/characters` | P0 | keep | Suggest: characters wiki/dateable/male | Role-first page |
+| moonlight peaks database | Structured reference | `/database` | P0 | keep | wiki.gg/Fandom page inventories and competitor database routes | Source-aware rows, not copied prose |
+| moonlight peaks character database | Resident filtering | `/database/characters` | P0 | keep | wiki.gg infoboxes expose profile/image fields | Use verification labels |
+| moonlight peaks families | Family groups | `/database/families` | P1 | keep | Official seven-family framing + wiki/competitor pages | Internal link bridge for romance |
+| moonlight peaks locations | Town/shops/landmarks | `/database/locations` | P1 | keep | Competitor locations hub + wiki.gg page titles | Mark datamined/reported rows |
+| moonlight peaks tools | Interactive helpers | `/tools` | P1 | keep | Competitor tools hub has picker/planners/trackers | Rebuild useful tools locally |
+| moonlight peaks item tracker | Collection tracking | `/tools/item-tracker` | P1 | keep | Competitor item tracker + wiki item page titles | LocalStorage checklist |
+| moonlight peaks platform picker | Platform decision | `/tools/platform-picker` | P1 | keep | Official platform spread + competitor picker | Recommender, not store-price source |
+| moonlight peaks romance tracker | Dateable planning | `/tools/romance-tracker` | P1 | keep | Competitor romance tools + Steam romance claim | Local notes; gifts TBC |
+| moonlight peaks farming calculator | Crop math | `/tools/farming-profit-calculator` | P1 | keep | Competitor farming profit planner | Player-entered values only |
 | moonlight peaks gift guide | Favorite gifts | `/gifts` | P0 | keep | Suggest + launch guides | Strategy until tables stable |
 | moonlight peaks farming | Crops/livestock/storage | `/farming` | P1 | keep | Official site + Steam systems | No fake crop prices |
 | moonlight peaks magic | Spells/potions/forms | `/magic` | P1 | keep | Official site systems | Systems hub |
@@ -70,11 +79,19 @@ OpenClaw keyword API 尝试：
 - Strong homepage hub with release/demo/platforms/characters/romance/activities/items/tools/FAQ.
 - Has launch-day news, tools, item tracker ideas, platform picker, multilingual links.
 - Opportunity: write more decision-first articles and avoid over-promising launch databases.
+- Sitemap audit: 375 URLs, including 119 character URLs, 10 family URLs, 15 location URLs, 19 item URLs, and 12 tools/tool-category URLs.
+- Tool opportunities copied as strategy, not implementation: platform picker, romance/gift helper, romance planner, item tracker, farming profit planner, and data submitter.
 
 ### moonlightpeaks.wiki.gg
 
 - Good future source for factual data such as flowers, items, characters, and mechanics.
 - Opportunity: use as source lead only; avoid copying data until stable and source-attributed.
+- MediaWiki audit: 443 page titles. Useful buckets include character infoboxes with portrait filenames, pronouns, birthdays, species, location, occupation, and family fields; location/shop page leads; and broad item/system page titles.
+
+### Fandom
+
+- MediaWiki audit: 125 page titles. Useful as a cross-check for entity names, families, animals, crops, fish, recipes, tools, energy, friendship, quests, weather, Nokturna, and romance buckets.
+- Single-page content is sparse, so Fandom is used as a verification signal rather than a primary prose source.
 
 ### YouTube / cozy guide creators
 
@@ -95,6 +112,16 @@ Core routes:
 - `/switch`
 - `/steam-deck`
 - `/characters`
+- `/database`
+- `/database/characters`
+- `/database/families`
+- `/database/locations`
+- `/database/items`
+- `/tools`
+- `/tools/platform-picker`
+- `/tools/romance-tracker`
+- `/tools/item-tracker`
+- `/tools/farming-profit-calculator`
 - `/romance`
 - `/gifts`
 - `/farming`
@@ -113,7 +140,7 @@ Omitted deliberately:
 
 - `/codes`: no official redeem-code evidence
 - `/tier-list`: no ranked unit/build system
-- full item/fish/gift/card databases: wait for stable live-game data
+- full fish/gift/card databases: wait for stable live-game data
 - PS5/Xbox pages: watch terms only
 
 ## 6. Implementation Notes
@@ -121,6 +148,9 @@ Omitted deliberately:
 - Renamed the old template data/components/route group to `moonlightpeaks`.
 - Replaced the old template route set with Moonlight Peaks launch routes.
 - Added `src/data/moonlightpeaks/` sources, keyword matrix, and guide data.
+- Added `src/data/moonlightpeaks/database.ts` with source-aware characters, families, locations, item groups, crawl audits, verification labels, image availability flags, and platform options.
+- Added database routes for characters, families, locations, and items.
+- Added rebuilt competitor-inspired tools for platform choice, romance notes, item tracking, and manual farming profit comparison.
 - Rebuilt homepage as a compact wiki hub with official gameplay video, quick routes, keyword hub, guide cards, and sidebar navigation.
 - Updated navbar/footer/messages/routes/sitemap/robots/manifest/canonical domain/wrangler config.
 - Generated new favicon/app icons with a moon and peak motif.

@@ -96,7 +96,7 @@ export function getLocalizedGameFacts(_locale?: Locale | string): GameFact[] {
 export function getHomeContent(_locale?: Locale | string): HomeContent {
   const coreRouteItems = keywordMatrix
     .filter((item) => item.status === 'keep')
-    .slice(0, 16)
+    .slice(0, 24)
     .map((item) => ({
       keyword: item.keyword,
       route: item.route,
@@ -274,6 +274,16 @@ export const routeLabels: Record<string, string> = {
   '/steam-deck': 'Steam Deck',
   '/romance': 'Romance Guide',
   '/characters': 'Characters',
+  '/database': 'Database',
+  '/database/characters': 'Character DB',
+  '/database/families': 'Family DB',
+  '/database/locations': 'Location DB',
+  '/database/items': 'Item DB',
+  '/tools': 'Tools',
+  '/tools/platform-picker': 'Platform Picker',
+  '/tools/romance-tracker': 'Romance Tracker',
+  '/tools/item-tracker': 'Item Tracker',
+  '/tools/farming-profit-calculator': 'Farming Calculator',
   '/gifts': 'Gift Guide',
   '/farming': 'Farming Guide',
   '/magic': 'Magic and Spells',

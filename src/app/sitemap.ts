@@ -13,6 +13,16 @@ const coreRoutes = [
   Routes.Switch,
   Routes.SteamDeck,
   Routes.Characters,
+  Routes.Database,
+  Routes.DatabaseCharacters,
+  Routes.DatabaseFamilies,
+  Routes.DatabaseLocations,
+  Routes.DatabaseItems,
+  Routes.Tools,
+  Routes.ToolPlatformPicker,
+  Routes.ToolRomanceTracker,
+  Routes.ToolItemTracker,
+  Routes.ToolFarmingProfitCalculator,
   Routes.Romance,
   Routes.Gifts,
   Routes.Farming,
@@ -50,6 +60,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         changeFrequency:
           route === Routes.Root ||
           route === Routes.Guides ||
+          route === Routes.Database ||
+          route === Routes.Tools ||
           route === Routes.ReleaseDate ||
           route === Routes.Platforms
             ? 'daily'
@@ -58,6 +70,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
           route === Routes.Root
             ? 1
             : route === Routes.Guides ||
+                route === Routes.Database ||
+                route === Routes.Tools ||
                 route === Routes.Platforms ||
                 route === Routes.ReleaseDate ||
                 route === Routes.Romance ||

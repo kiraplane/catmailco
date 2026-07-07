@@ -15,6 +15,7 @@ import {
   Moon,
   ShieldCheck,
   Sparkles,
+  Wrench,
 } from 'lucide-react';
 import type { Locale } from 'next-intl';
 import type { ReactNode } from 'react';
@@ -49,7 +50,18 @@ const wikiNavRoutes = [
   {
     title: 'Relationships',
     icon: Heart,
-    routes: ['/characters', '/romance', '/gifts'],
+    routes: ['/characters', '/romance', '/gifts', '/database/characters'],
+  },
+  {
+    title: 'Database',
+    icon: Boxes,
+    routes: [
+      '/database',
+      '/database/characters',
+      '/database/families',
+      '/database/locations',
+      '/database/items',
+    ],
   },
   {
     title: 'Farm & Magic',
@@ -60,6 +72,17 @@ const wikiNavRoutes = [
     title: 'Systems',
     icon: Boxes,
     routes: ['/nokturna'],
+  },
+  {
+    title: 'Tools',
+    icon: Wrench,
+    routes: [
+      '/tools',
+      '/tools/platform-picker',
+      '/tools/romance-tracker',
+      '/tools/item-tracker',
+      '/tools/farming-profit-calculator',
+    ],
   },
   {
     title: 'Official & Safety',
@@ -313,6 +336,8 @@ export function QuickWikiLinks({ locale }: { locale?: Locale }) {
     { href: '/guides/beginner-guide', label: 'Beginner', icon: BookOpen },
     { href: '/platforms', label: 'Platforms', icon: Compass },
     { href: '/romance', label: 'Romance', icon: Heart },
+    { href: '/database', label: 'Database', icon: Boxes },
+    { href: '/tools', label: 'Tools', icon: Wrench },
     { href: '/gifts', label: 'Gifts', icon: Gift },
     { href: '/magic', label: 'Magic', icon: Moon },
     { href: '/nokturna', label: 'Nokturna', icon: Boxes },

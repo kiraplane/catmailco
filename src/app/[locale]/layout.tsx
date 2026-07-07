@@ -43,6 +43,8 @@ const MARKETING_NAVBAR_KEYS = [
   'home',
   'guides',
   'platforms',
+  'database',
+  'tools',
   'romance',
   'farming',
   'magic',
@@ -55,6 +57,8 @@ const MARKETING_FOOTER_KEYS = [
   'tagline',
   'start',
   'guides',
+  'database',
+  'tools',
   'official',
   'legal',
 ] as const;
@@ -67,6 +71,20 @@ const MARKETING_FOOTER_GUIDE_ITEM_KEYS = [
   'magic',
   'nokturna',
   'walkthrough',
+] as const;
+const MARKETING_FOOTER_DATABASE_ITEM_KEYS = [
+  'all',
+  'characters',
+  'families',
+  'locations',
+  'items',
+] as const;
+const MARKETING_FOOTER_TOOLS_ITEM_KEYS = [
+  'all',
+  'platformPicker',
+  'romanceTracker',
+  'itemTracker',
+  'farmingCalculator',
 ] as const;
 const MARKETING_FOOTER_START_ITEM_KEYS = [
   'beginner',
@@ -98,6 +116,10 @@ function pickMarketingFooter(footer: MessageMap | undefined) {
   const startItems = start?.items as MessageMap | undefined;
   const guides = selectedFooter.guides as MessageMap | undefined;
   const guideItems = guides?.items as MessageMap | undefined;
+  const database = selectedFooter.database as MessageMap | undefined;
+  const databaseItems = database?.items as MessageMap | undefined;
+  const tools = selectedFooter.tools as MessageMap | undefined;
+  const toolItems = tools?.items as MessageMap | undefined;
   const official = selectedFooter.official as MessageMap | undefined;
   const officialItems = official?.items as MessageMap | undefined;
 
@@ -112,6 +134,20 @@ function pickMarketingFooter(footer: MessageMap | undefined) {
     selectedFooter.guides = {
       ...guides,
       items: pickKeys(guideItems, MARKETING_FOOTER_GUIDE_ITEM_KEYS),
+    };
+  }
+
+  if (database && databaseItems) {
+    selectedFooter.database = {
+      ...database,
+      items: pickKeys(databaseItems, MARKETING_FOOTER_DATABASE_ITEM_KEYS),
+    };
+  }
+
+  if (tools && toolItems) {
+    selectedFooter.tools = {
+      ...tools,
+      items: pickKeys(toolItems, MARKETING_FOOTER_TOOLS_ITEM_KEYS),
     };
   }
 

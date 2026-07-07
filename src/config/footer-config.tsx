@@ -79,6 +79,66 @@ export function useFooterLinks(): NestedMenuItem[] {
       ],
     },
     {
+      title: t('database.title'),
+      items: [
+        {
+          title: t('database.items.all'),
+          href: Routes.Database,
+          external: false,
+        },
+        {
+          title: t('database.items.characters'),
+          href: Routes.DatabaseCharacters,
+          external: false,
+        },
+        {
+          title: t('database.items.families'),
+          href: Routes.DatabaseFamilies,
+          external: false,
+        },
+        {
+          title: t('database.items.locations'),
+          href: Routes.DatabaseLocations,
+          external: false,
+        },
+        {
+          title: t('database.items.items'),
+          href: Routes.DatabaseItems,
+          external: false,
+        },
+      ],
+    },
+    {
+      title: t('tools.title'),
+      items: [
+        {
+          title: t('tools.items.all'),
+          href: Routes.Tools,
+          external: false,
+        },
+        {
+          title: t('tools.items.platformPicker'),
+          href: Routes.ToolPlatformPicker,
+          external: false,
+        },
+        {
+          title: t('tools.items.romanceTracker'),
+          href: Routes.ToolRomanceTracker,
+          external: false,
+        },
+        {
+          title: t('tools.items.itemTracker'),
+          href: Routes.ToolItemTracker,
+          external: false,
+        },
+        {
+          title: t('tools.items.farmingCalculator'),
+          href: Routes.ToolFarmingProfitCalculator,
+          external: false,
+        },
+      ],
+    },
+    {
       title: t('official.title'),
       items: [
         {

@@ -32,7 +32,7 @@ export const siteFacts = {
 } as const;
 
 export const siteDescription =
-  'Moonlight Peaks wiki for beginner guides, romance, gifts, farming, magic, Nokturna, platforms, demo, Steam Deck, Switch, and safe cheats.';
+  'Moonlight Peaks wiki for guides, database, tools, romance, gifts, farming, magic, platforms, demo, Steam Deck, Switch, and safe cheats.';
 
 export const gameFacts: GameFact[] = [
   {
@@ -97,6 +97,14 @@ export const sourceList: DataSource[] = [
     checkedAt,
     confidence: 'medium',
     note: 'Benchmarked for launch hub breadth: release, demo, platforms, characters, romance, locations, activities, items, tools, FAQ, and localization.',
+  },
+  {
+    type: 'wiki',
+    label: 'MoonlightPeaksWiki.com tools and database routes',
+    url: 'https://moonlightpeakswiki.com/tools',
+    checkedAt,
+    confidence: 'medium',
+    note: 'Used as a competitor feature lead for Platform Picker, romance/gift helpers, Item Tracker, Farming Profit Planner, characters, families, locations, and item indexes.',
   },
   {
     type: 'youtube',
@@ -247,6 +255,114 @@ export const keywordMatrix: KeywordMatrixItem[] = [
       'Google suggest returns characters, characters wiki, dateable characters, and male characters.',
     notes:
       'Current public data supports a resident/family overview, not a complete database.',
+  },
+  {
+    keyword: 'moonlight peaks database',
+    intent:
+      'Browse structured launch data for characters, families, locations, and item indexes.',
+    route: '/database',
+    priority: 'P0',
+    status: 'keep',
+    evidence:
+      'moonlightpeakswiki.com exposes characters, families, locations, items, and tools hubs; wiki.gg and Fandom expose page-title data for database seeding.',
+    notes:
+      'Use source-aware database rows with confidence labels instead of copying competitor prose or images.',
+  },
+  {
+    keyword: 'moonlight peaks character database',
+    intent:
+      'Filter residents by species, family, romance status, birthday, image availability, and source confidence.',
+    route: '/database/characters',
+    priority: 'P0',
+    status: 'keep',
+    evidence:
+      'wiki.gg character infoboxes include pronouns, birthdays, species, town links, occupations, families, and portrait filenames for many residents.',
+    notes:
+      'Keep exact gifts and route mechanics marked TBC until stable live-game data exists.',
+  },
+  {
+    keyword: 'moonlight peaks families',
+    intent:
+      'Understand the supernatural family structure and which residents belong together.',
+    route: '/database/families',
+    priority: 'P1',
+    status: 'keep',
+    evidence:
+      'Official sources mention seven families; wiki.gg/Fandom and competitor pages expose Ambrosia, Logan, Webb, Hosu, Khazan, Henderson, and Dracula groupings.',
+    notes:
+      'Useful internal link bridge between romance, characters, and locations.',
+  },
+  {
+    keyword: 'moonlight peaks locations',
+    intent:
+      'Find town areas, shops, the farm, landmarks, mines, and family places.',
+    route: '/database/locations',
+    priority: 'P1',
+    status: 'keep',
+    evidence:
+      'Competitor locations page and wiki.gg titles list town, farm, cottage, shops, graveyard, mansion, lake, forest, mines, and landmarks.',
+    notes:
+      'Mark datamined or lightly described landmarks separately from official locations.',
+  },
+  {
+    keyword: 'moonlight peaks item tracker',
+    intent:
+      'Track crops, flowers, tools, animals, resources, recipes, and collection rows.',
+    route: '/tools/item-tracker',
+    priority: 'P1',
+    status: 'keep',
+    evidence:
+      'Competitor tool inventory includes an item tracker; wiki.gg and Fandom expose large item/category page sets.',
+    notes:
+      'Local-only checklist is safer than publishing unverified price or gift tables.',
+  },
+  {
+    keyword: 'moonlight peaks tools',
+    intent:
+      'Use interactive helpers for platform decisions, romance planning, item tracking, and farming math.',
+    route: '/tools',
+    priority: 'P1',
+    status: 'keep',
+    evidence:
+      'moonlightpeakswiki.com/tools lists Platform Picker, Romance Gift Finder, Match Quiz, Romance Planner, Item Tracker, Farming Profit Planner, and Submit Data.',
+    notes:
+      'Build fewer but more reliable tools first: picker, romance tracker, item tracker, and manual farming calculator.',
+  },
+  {
+    keyword: 'moonlight peaks platform picker',
+    intent:
+      'Choose Steam, Steam Deck, Switch, Switch 2, or Android based on play style and safety.',
+    route: '/tools/platform-picker',
+    priority: 'P1',
+    status: 'keep',
+    evidence:
+      'Competitor tool exists and official platform spread creates real decision demand.',
+    notes:
+      'Keep current store checks on platform pages; tool is recommendation logic.',
+  },
+  {
+    keyword: 'moonlight peaks romance tracker',
+    intent:
+      'Shortlist romance candidates and keep private notes for gifts, schedules, and heart events.',
+    route: '/tools/romance-tracker',
+    priority: 'P1',
+    status: 'keep',
+    evidence:
+      'Competitor has romance helper tools and character pages; Steam says the game has two dozen romanceable characters.',
+    notes:
+      'Use localStorage for notes and keep unverified gifts out of hard-coded claims.',
+  },
+  {
+    keyword: 'moonlight peaks farming calculator',
+    intent:
+      'Compare crop profit scenarios with player-entered seed cost, sell value, days, harvests, and extra cost.',
+    route: '/tools/farming-profit-calculator',
+    priority: 'P1',
+    status: 'keep',
+    evidence:
+      'Competitor Farming Profit Planner exists; exact crop economics still need live-game verification.',
+    notes:
+      'Manual calculator captures the tool intent without publishing guessed crop tables.',
   },
   {
     keyword: 'moonlight peaks gift guide',
