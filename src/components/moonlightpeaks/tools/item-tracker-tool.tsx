@@ -2,13 +2,19 @@
 
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import type { ItemEntry } from '@/data/moonlightpeaks/database';
 import { Check, RotateCcw, Search } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
 
 const storageKey = 'moonlightpeaks-item-tracker-v1';
 
-export function ItemTrackerTool({ items }: { items: ItemEntry[] }) {
+export interface ItemTrackerItem {
+  slug: string;
+  name: string;
+  category: string;
+  trackerGroup: string;
+}
+
+export function ItemTrackerTool({ items }: { items: ItemTrackerItem[] }) {
   const [query, setQuery] = useState('');
   const [group, setGroup] = useState('All');
   const [hideDone, setHideDone] = useState(false);

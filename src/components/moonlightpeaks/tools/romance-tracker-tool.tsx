@@ -2,13 +2,19 @@
 
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import type { CharacterEntry } from '@/data/moonlightpeaks/database';
-import {
-  getRomanceLabel,
-  getVerificationLabel,
-} from '@/data/moonlightpeaks/database';
+import type { RomanceStatus } from '@/data/moonlightpeaks/database';
 import { Check, Heart, RotateCcw, Search } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
+
+export interface RomanceTrackerCharacter {
+  slug: string;
+  name: string;
+  species: string;
+  family: string;
+  occupation?: string;
+  romanceStatus: RomanceStatus;
+  summary: string;
+}
 
 interface RomanceState {
   shortlist: string[];
@@ -17,10 +23,16 @@ interface RomanceState {
 
 const storageKey = 'moonlightpeaks-romance-tracker-v1';
 
+const romanceLabels: Record<RomanceStatus, string> = {
+  romanceable: 'Romanceable',
+  'not-romanceable': 'Resident',
+  tbc: 'TBC',
+};
+
 export function RomanceTrackerTool({
   characters,
 }: {
-  characters: CharacterEntry[];
+  characters: RomanceTrackerCharacter[];
 }) {
   const [query, setQuery] = useState('');
   const [family, setFamily] = useState('All');
@@ -114,13 +126,7 @@ export function RomanceTrackerTool({
             >
               <div className="flex flex-wrap gap-2">
                 <Badge className="bg-[#C77DFF] text-[#14091E]">
-                  {getRomanceLabel(character.romanceStatus)}
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="border-[#4B315F] bg-[#120719] text-[#DED2F6]"
-                >
-                  {getVerificationLabel(character.verification)}
+                  {romanceLabels[character.romanceStatus]}
                 </Badge>
                 <Badge
                   variant="outline"

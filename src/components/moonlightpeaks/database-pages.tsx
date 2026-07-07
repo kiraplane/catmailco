@@ -6,11 +6,8 @@ import {
 import { JsonLd } from '@/components/seo/json-ld';
 import { Badge } from '@/components/ui/badge';
 import {
-  type CharacterEntry,
   type DatabaseCategory,
-  type FamilyEntry,
-  type ItemEntry,
-  type LocationEntry,
+  type RomanceStatus,
   characters,
   databaseCategoryMeta,
   families,
@@ -40,6 +37,108 @@ const categoryIcons = {
   locations: Map,
   items: Boxes,
 } satisfies Record<DatabaseCategory, typeof Database>;
+
+interface CharacterCardEntry {
+  slug: string;
+  name: string;
+  species: string;
+  family: string;
+  pronouns?: string;
+  birthday?: string;
+  livesIn?: string;
+  occupation?: string;
+  romanceStatus: RomanceStatus;
+  summary: string;
+}
+
+interface FamilyCardEntry {
+  slug: string;
+  name: string;
+  inclination: string;
+  summary: string;
+  knownMembers: string[];
+}
+
+interface LocationCardEntry {
+  slug: string;
+  name: string;
+  kind: string;
+  summary: string;
+  relatedCharacters: string[];
+}
+
+interface ItemCardEntry {
+  slug: string;
+  name: string;
+  category: string;
+  summary: string;
+  trackerGroup: string;
+}
+
+const databaseLandingCategories = Object.values(databaseCategoryMeta).map(
+  ({ category, description, route, shortTitle }) => ({
+    category,
+    description,
+    route,
+    shortTitle,
+  })
+);
+
+const characterCards: CharacterCardEntry[] = characters.map(
+  ({
+    birthday,
+    family,
+    livesIn,
+    name,
+    occupation,
+    pronouns,
+    romanceStatus,
+    slug,
+    species,
+    summary,
+  }) => ({
+    birthday,
+    family,
+    livesIn,
+    name,
+    occupation,
+    pronouns,
+    romanceStatus,
+    slug,
+    species,
+    summary,
+  })
+);
+
+const familyCards: FamilyCardEntry[] = families.map(
+  ({ inclination, knownMembers, name, slug, summary }) => ({
+    inclination,
+    knownMembers,
+    name,
+    slug,
+    summary,
+  })
+);
+
+const locationCards: LocationCardEntry[] = locations.map(
+  ({ kind, name, relatedCharacters, slug, summary }) => ({
+    kind,
+    name,
+    relatedCharacters,
+    slug,
+    summary,
+  })
+);
+
+const itemCards: ItemCardEntry[] = items.map(
+  ({ category, name, slug, summary, trackerGroup }) => ({
+    category,
+    name,
+    slug,
+    summary,
+    trackerGroup,
+  })
+);
 
 function SectionShell({
   children,
@@ -98,7 +197,6 @@ function SectionShell({
 
 export function DatabaseLandingPage({ locale }: { locale?: Locale }) {
   const counts = getDatabaseCounts();
-  const categories = Object.values(databaseCategoryMeta);
 
   return (
     <SectionShell
@@ -108,7 +206,7 @@ export function DatabaseLandingPage({ locale }: { locale?: Locale }) {
       intro="A structured launch database for characters, families, locations, and item indexes with local artwork and compact browsing pages."
     >
       <section className="grid gap-4 md:grid-cols-2">
-        {categories.map((category) => {
+        {databaseLandingCategories.map((category) => {
           const Icon = categoryIcons[category.category];
           return (
             <LocaleLink
@@ -186,16 +284,18 @@ export function DatabaseCategoryPage({
       </section>
 
       {category === 'characters' ? (
-        <CharacterGrid entries={characters} />
+        <CharacterGrid entries={characterCards} />
       ) : null}
-      {category === 'families' ? <FamilyGrid entries={families} /> : null}
-      {category === 'locations' ? <LocationGrid entries={locations} /> : null}
-      {category === 'items' ? <ItemGrid entries={items} /> : null}
+      {category === 'families' ? <FamilyGrid entries={familyCards} /> : null}
+      {category === 'locations' ? (
+        <LocationGrid entries={locationCards} />
+      ) : null}
+      {category === 'items' ? <ItemGrid entries={itemCards} /> : null}
     </SectionShell>
   );
 }
 
-function CharacterGrid({ entries }: { entries: CharacterEntry[] }) {
+function CharacterGrid({ entries }: { entries: CharacterCardEntry[] }) {
   return (
     <section className="grid gap-4 md:grid-cols-2">
       {entries.map((entry) => {
@@ -241,7 +341,7 @@ function CharacterGrid({ entries }: { entries: CharacterEntry[] }) {
   );
 }
 
-function FamilyGrid({ entries }: { entries: FamilyEntry[] }) {
+function FamilyGrid({ entries }: { entries: FamilyCardEntry[] }) {
   return (
     <section className="grid gap-4 md:grid-cols-2">
       {entries.map((entry) => {
@@ -283,7 +383,7 @@ function FamilyGrid({ entries }: { entries: FamilyEntry[] }) {
   );
 }
 
-function LocationGrid({ entries }: { entries: LocationEntry[] }) {
+function LocationGrid({ entries }: { entries: LocationCardEntry[] }) {
   return (
     <section className="grid gap-4 md:grid-cols-2">
       {entries.map((entry) => {
@@ -325,7 +425,7 @@ function LocationGrid({ entries }: { entries: LocationEntry[] }) {
   );
 }
 
-function ItemGrid({ entries }: { entries: ItemEntry[] }) {
+function ItemGrid({ entries }: { entries: ItemCardEntry[] }) {
   const trackerGroups = Array.from(
     new Set(entries.map((entry) => entry.trackerGroup))
   );

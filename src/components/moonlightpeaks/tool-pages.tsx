@@ -1,8 +1,14 @@
 import Container from '@/components/layout/container';
 import { FarmingProfitCalculatorTool } from '@/components/moonlightpeaks/tools/farming-profit-calculator-tool';
-import { ItemTrackerTool } from '@/components/moonlightpeaks/tools/item-tracker-tool';
+import {
+  type ItemTrackerItem,
+  ItemTrackerTool,
+} from '@/components/moonlightpeaks/tools/item-tracker-tool';
 import { PlatformPickerTool } from '@/components/moonlightpeaks/tools/platform-picker-tool';
-import { RomanceTrackerTool } from '@/components/moonlightpeaks/tools/romance-tracker-tool';
+import {
+  type RomanceTrackerCharacter,
+  RomanceTrackerTool,
+} from '@/components/moonlightpeaks/tools/romance-tracker-tool';
 import {
   MobileWikiNav,
   WikiRouteSidebar,
@@ -69,6 +75,35 @@ const toolCards = [
     tags: ['Crops', 'Profit/day', 'Manual values'],
   },
 ] as const;
+
+const platformPickerOptions = platformOptions.map(
+  ({ id, label, strengths }) => ({
+    id,
+    label,
+    strengths,
+  })
+);
+
+const romanceTrackerCharacters: RomanceTrackerCharacter[] = characters.map(
+  ({ family, name, occupation, romanceStatus, slug, species, summary }) => ({
+    family,
+    name,
+    occupation,
+    romanceStatus,
+    slug,
+    species,
+    summary,
+  })
+);
+
+const itemTrackerItems: ItemTrackerItem[] = items.map(
+  ({ category, name, slug, trackerGroup }) => ({
+    category,
+    name,
+    slug,
+    trackerGroup,
+  })
+);
 
 export function ToolsLandingPage({ locale }: { locale?: Locale }) {
   return (
@@ -157,12 +192,14 @@ export function ToolDetailPage({
       intro={tool.body}
     >
       {kind === 'platform-picker' ? (
-        <PlatformPickerTool platforms={platformOptions} />
+        <PlatformPickerTool platforms={platformPickerOptions} />
       ) : null}
       {kind === 'romance-tracker' ? (
-        <RomanceTrackerTool characters={characters} />
+        <RomanceTrackerTool characters={romanceTrackerCharacters} />
       ) : null}
-      {kind === 'item-tracker' ? <ItemTrackerTool items={items} /> : null}
+      {kind === 'item-tracker' ? (
+        <ItemTrackerTool items={itemTrackerItems} />
+      ) : null}
       {kind === 'farming-profit-calculator' ? (
         <FarmingProfitCalculatorTool />
       ) : null}
