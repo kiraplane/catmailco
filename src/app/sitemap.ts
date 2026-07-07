@@ -1,4 +1,4 @@
-import { guides } from '@/data/feedthepit/guides';
+import { guides } from '@/data/moonlightpeaks/guides';
 import { Routes } from '@/routes';
 import type { MetadataRoute } from 'next';
 import { routing } from '../i18n/routing';
@@ -6,16 +6,22 @@ import { getCanonicalBaseUrl } from '../lib/urls/urls';
 
 const coreRoutes = [
   Routes.Root,
-  Routes.Play,
   Routes.Guides,
-  Routes.Cards,
-  Routes.Monsters,
+  Routes.ReleaseDate,
+  Routes.Demo,
+  Routes.Platforms,
+  Routes.Switch,
+  Routes.SteamDeck,
+  Routes.Characters,
+  Routes.Romance,
+  Routes.Gifts,
+  Routes.Farming,
+  Routes.Magic,
+  Routes.Nokturna,
   Routes.Walkthrough,
-  Routes.Steam,
+  Routes.Cheats,
   Routes.Download,
-  Routes.ItchIo,
   Routes.Discord,
-  Routes.Mobile,
   Routes.PrivacyPolicy,
   Routes.TermsOfService,
   Routes.CookiePolicy,
@@ -26,7 +32,7 @@ const guideRoutes = guides
   .map((guide) => guide.path)
   .filter((path) => !coreRoutes.includes(path as Routes));
 
-const stableLastModified = new Date('2026-07-02T00:00:00.000Z');
+const stableLastModified = new Date('2026-07-07T00:00:00.000Z');
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const sitemapList: MetadataRoute.Sitemap = [];
@@ -43,24 +49,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         lastModified: stableLastModified,
         changeFrequency:
           route === Routes.Root ||
-          route === Routes.Play ||
           route === Routes.Guides ||
-          route === Routes.Steam
+          route === Routes.ReleaseDate ||
+          route === Routes.Platforms
             ? 'daily'
             : 'weekly',
         priority:
           route === Routes.Root
             ? 1
-            : route === Routes.Play
-              ? 0.95
-              : route === Routes.Guides ||
-                  route === Routes.Steam ||
-                  route === Routes.Cards ||
-                  route === Routes.Monsters ||
-                  route === Routes.Walkthrough ||
-                  route === Routes.Download
-                ? 0.9
-                : 0.8,
+            : route === Routes.Guides ||
+                route === Routes.Platforms ||
+                route === Routes.ReleaseDate ||
+                route === Routes.Romance ||
+                route === Routes.Farming ||
+                route === Routes.Magic ||
+                route === Routes.Walkthrough ||
+                route === Routes.Download
+              ? 0.9
+              : 0.8,
       });
     });
   });

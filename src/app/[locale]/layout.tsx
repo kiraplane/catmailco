@@ -41,18 +41,19 @@ const CLIENT_MESSAGE_NAMESPACES = [
 
 const MARKETING_NAVBAR_KEYS = [
   'home',
-  'play',
   'guides',
-  'cards',
-  'monsters',
-  'steam',
+  'platforms',
+  'romance',
+  'farming',
+  'magic',
+  'nokturna',
   'download',
   'discord',
 ] as const;
 
 const MARKETING_FOOTER_KEYS = [
   'tagline',
-  'play',
+  'start',
   'guides',
   'official',
   'legal',
@@ -60,21 +61,23 @@ const MARKETING_FOOTER_KEYS = [
 const MARKETING_FOOTER_GUIDE_ITEM_KEYS = [
   'all',
   'beginner',
-  'cards',
-  'monsters',
+  'romance',
+  'gifts',
+  'farming',
+  'magic',
+  'nokturna',
   'walkthrough',
-  'achievements',
 ] as const;
-const MARKETING_FOOTER_PLAY_ITEM_KEYS = [
-  'online',
-  'steam',
-  'itchIo',
-  'download',
+const MARKETING_FOOTER_START_ITEM_KEYS = [
+  'beginner',
+  'release',
+  'demo',
+  'platforms',
 ] as const;
 const MARKETING_FOOTER_OFFICIAL_ITEM_KEYS = [
   'discord',
-  'mobile',
-  'fixes',
+  'download',
+  'cheats',
   'disclaimer',
 ] as const;
 
@@ -91,17 +94,17 @@ function pickKeys<T extends MessageMap, K extends readonly string[]>(
 
 function pickMarketingFooter(footer: MessageMap | undefined) {
   const selectedFooter = pickKeys(footer, MARKETING_FOOTER_KEYS) as MessageMap;
-  const play = selectedFooter.play as MessageMap | undefined;
-  const playItems = play?.items as MessageMap | undefined;
+  const start = selectedFooter.start as MessageMap | undefined;
+  const startItems = start?.items as MessageMap | undefined;
   const guides = selectedFooter.guides as MessageMap | undefined;
   const guideItems = guides?.items as MessageMap | undefined;
   const official = selectedFooter.official as MessageMap | undefined;
   const officialItems = official?.items as MessageMap | undefined;
 
-  if (play && playItems) {
-    selectedFooter.play = {
-      ...play,
-      items: pickKeys(playItems, MARKETING_FOOTER_PLAY_ITEM_KEYS),
+  if (start && startItems) {
+    selectedFooter.start = {
+      ...start,
+      items: pickKeys(startItems, MARKETING_FOOTER_START_ITEM_KEYS),
     };
   }
 

@@ -1,8 +1,8 @@
 {
   "Metadata": {
-    "name": "Feed The Pit",
-    "title": "Feed The Pit Wiki - Guides, Cards, Monsters and Play Online",
-    "description": "Feed The Pit wiki with guides, cards, monsters, walkthrough, endings, achievements, Steam, download help, and play online."
+    "name": "Moonlight Peaks",
+    "title": "Moonlight Peaks Wiki - Guides, Romance, Platforms and Farming",
+    "description": "Moonlight Peaks wiki for beginner guides, romance, gifts, farming, magic, Nokturna, platforms, demo, Switch, Steam Deck, and safe cheats."
   },
   "Common": {
     "premium": "Premium",
@@ -54,7 +54,7 @@
   },
   "PricingPage": {
     "title": "Pricing",
-    "description": "Optional supporter plans for keeping Feed The Pit Wiki maintained",
+    "description": "Optional supporter plans for keeping Moonlight Peaks Wiki maintained",
     "subtitle": "Simple support options for readers who want to help maintain current guides and hosting",
     "monthly": "Monthly",
     "yearly": "Yearly",
@@ -80,11 +80,11 @@
   "PricePlans": {
     "free": {
       "name": "Free",
-      "description": "Browse Feed The Pit Wiki with no payment required",
+      "description": "Browse Moonlight Peaks Wiki with no payment required",
       "features": {
-        "feature-1": "Play-online page and official-link guidance",
-        "feature-2": "Beginner, cards, monsters, Act 1, and walkthrough guides",
-        "feature-3": "Steam, itch.io, achievements, fixes, Discord, and mobile safety pages",
+        "feature-1": "Launch, platform, demo, and official-link guidance",
+        "feature-2": "Beginner, romance, gifts, farming, magic, Nokturna, and walkthrough guides",
+        "feature-3": "Switch, Steam Deck, download, Discord, and safe cheats pages",
         "feature-4": "Guide pages updated as sources change"
       },
       "limits": {
@@ -113,7 +113,7 @@
     },
     "max": {
       "name": "Backer",
-      "description": "For heavier support of Feed The Pit Wiki maintenance",
+      "description": "For heavier support of Moonlight Peaks Wiki maintenance",
       "features": {
         "feature-1": "Support expanded guide coverage",
         "feature-2": "Help fund more frequent source reviews",
@@ -290,20 +290,23 @@
       "home": {
         "title": "Home"
       },
-      "play": {
-        "title": "Play Online"
-      },
       "guides": {
         "title": "Guides"
       },
-      "cards": {
-        "title": "Cards"
+      "platforms": {
+        "title": "Platforms"
       },
-      "monsters": {
-        "title": "Monsters"
+      "romance": {
+        "title": "Romance"
       },
-      "steam": {
-        "title": "Steam Act 1"
+      "farming": {
+        "title": "Farming"
+      },
+      "magic": {
+        "title": "Magic"
+      },
+      "nokturna": {
+        "title": "Nokturna"
       },
       "download": {
         "title": "Download"
@@ -313,14 +316,14 @@
       }
     },
     "footer": {
-      "tagline": "Independent Feed The Pit wiki for Act 1, cards, monsters, walkthrough, endings, achievements, play online, and safe platform links.",
-      "play": {
-        "title": "Play",
+      "tagline": "Independent Moonlight Peaks wiki for launch setup, platforms, romance, gifts, farming, magic, Nokturna, and safe links.",
+      "start": {
+        "title": "Start",
         "items": {
-          "online": "Play Online",
-          "steam": "Steam Act 1",
-          "itchIo": "itch.io",
-          "download": "Download"
+          "beginner": "Beginner Guide",
+          "release": "Release Date",
+          "demo": "Demo Guide",
+          "platforms": "Platforms"
         }
       },
       "guides": {
@@ -328,19 +331,21 @@
         "items": {
           "all": "All Guides",
           "beginner": "Beginner Guide",
-          "cards": "Cards",
-          "monsters": "Monsters",
-          "walkthrough": "Walkthrough",
-          "achievements": "Achievements"
+          "romance": "Romance",
+          "gifts": "Gifts",
+          "farming": "Farming",
+          "magic": "Magic",
+          "nokturna": "Nokturna",
+          "walkthrough": "Walkthrough"
         }
       },
       "official": {
         "title": "Official",
         "items": {
           "discord": "Discord",
-          "mobile": "Mobile Safety",
+          "download": "Download",
           "disclaimer": "Disclaimer",
-          "fixes": "Rendering Fixes"
+          "cheats": "Cheats Safety"
         }
       },
       "legal": {

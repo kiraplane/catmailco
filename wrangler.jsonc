@@ -1,26 +1,26 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "main": ".open-next/worker.js",
-  "name": "feedthepit",
+  "name": "moonlightpeaks",
   "workers_dev": true,
   "preview_urls": true,
   "keep_vars": true,
   "vars": {
     "ADSTERRA_ADS_ENABLED": "false",
-    "NEXT_PUBLIC_GOOGLE_ANALYTICS_ID": "G-GE0F2L964X"
+    "NEXT_PUBLIC_GOOGLE_ANALYTICS_ID": "G-FWKR2Z78CH"
   },
   "compatibility_date": "2025-04-01",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "routes": [
     {
-      "pattern": "feedthepit.wiki",
+      "pattern": "moonlightpeaks.org",
       "custom_domain": true,
-      "zone_name": "feedthepit.wiki"
+      "zone_name": "moonlightpeaks.org"
     },
     {
-      "pattern": "www.feedthepit.wiki",
+      "pattern": "www.moonlightpeaks.org",
       "custom_domain": true,
-      "zone_name": "feedthepit.wiki"
+      "zone_name": "moonlightpeaks.org"
     }
   ],
   "build": {

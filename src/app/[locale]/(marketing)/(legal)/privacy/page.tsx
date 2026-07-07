@@ -10,9 +10,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   return constructMetadata({
-    title: 'Privacy Policy | Feed The Pit Wiki',
+    title: 'Privacy Policy | Moonlight Peaks Wiki',
     description:
-      'Privacy policy for Feed The Pit Wiki, an unofficial guide and play-online site.',
+      'Privacy policy for Moonlight Peaks Wiki, an independent guide site.',
     locale,
     pathname: '/privacy',
   });
@@ -20,25 +20,26 @@ export async function generateMetadata({
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="bg-[#111915] py-12 text-[#F3EDE1]">
+    <div className="bg-[#120719] py-12 text-[#F4EAFE]">
       <Container className="max-w-3xl space-y-6 px-4">
         <h1 className="font-display text-4xl font-black">Privacy Policy</h1>
-        <p className="leading-8 text-[#CDEAE7]">
-          Feed The Pit Wiki is an unofficial fan guide and browser play site. We
-          do not require accounts for browsing the wiki, system guides,
-          official-link pages, or the play-online page.
+        <p className="leading-8 text-[#DED2F6]">
+          Moonlight Peaks Wiki is an independent guide site. We do not require
+          accounts for browsing the wiki, platform pages, relationship guides,
+          farming guides, or official-link pages.
         </p>
-        <p className="leading-8 text-[#CDEAE7]">
+        <p className="leading-8 text-[#DED2F6]">
           Standard analytics or hosting logs may record aggregate traffic data
           such as page views, referrers, device type, and approximate region. We
           use this to improve guides and fix broken pages.
         </p>
-        <p className="leading-8 text-[#CDEAE7]">
-          Remote media may be loaded from Steam, itch.io, or YouTube when a page
-          embeds official artwork, store links, or guide videos.
+        <p className="leading-8 text-[#DED2F6]">
+          Remote media may be loaded from official storefronts or YouTube when a
+          page embeds official artwork, store links, screenshots, or guide
+          videos.
         </p>
-        <p className="leading-8 text-[#CDEAE7]">
-          Privacy questions can be sent to hello@feedthepit.wiki.
+        <p className="leading-8 text-[#DED2F6]">
+          Privacy questions can be sent to hello@moonlightpeaks.org.
         </p>
       </Container>
     </div>

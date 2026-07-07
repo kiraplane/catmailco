@@ -7,8 +7,9 @@ import {
   Boxes,
   Download,
   Gamepad2,
+  Heart,
   MessageCircle,
-  Skull,
+  Moon,
   Sparkles,
 } from 'lucide-react';
 import { useTranslations } from 'next-intl';
@@ -18,34 +19,40 @@ export function useNavbarLinks(): NestedMenuItem[] {
 
   return [
     {
-      title: t('play.title'),
-      href: Routes.Play,
-      external: false,
-      icon: <Gamepad2 className="size-4" />,
-    },
-    {
       title: t('guides.title'),
       href: Routes.Guides,
       external: false,
       icon: <BookOpen className="size-4" />,
     },
     {
-      title: t('cards.title'),
-      href: Routes.Cards,
+      title: t('platforms.title'),
+      href: Routes.Platforms,
       external: false,
-      icon: <Boxes className="size-4" />,
+      icon: <Gamepad2 className="size-4" />,
     },
     {
-      title: t('monsters.title'),
-      href: Routes.Monsters,
+      title: t('romance.title'),
+      href: Routes.Romance,
       external: false,
-      icon: <Skull className="size-4" />,
+      icon: <Heart className="size-4" />,
     },
     {
-      title: t('steam.title'),
-      href: Routes.Steam,
+      title: t('farming.title'),
+      href: Routes.Farming,
       external: false,
       icon: <Sparkles className="size-4" />,
+    },
+    {
+      title: t('magic.title'),
+      href: Routes.Magic,
+      external: false,
+      icon: <Moon className="size-4" />,
+    },
+    {
+      title: t('nokturna.title'),
+      href: Routes.Nokturna,
+      external: false,
+      icon: <Boxes className="size-4" />,
     },
     {
       title: t('download.title'),

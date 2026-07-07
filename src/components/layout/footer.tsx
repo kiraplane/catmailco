@@ -131,8 +131,8 @@ export function Footer({ className }: React.HTMLAttributes<HTMLElement>) {
           </span>
 
           <span className="text-muted-foreground text-sm">
-            Independent Feed The Pit guide site. Not affiliated with Curious Fox
-            Sox, mooncrustgames, Steam, or itch.io.
+            Independent Moonlight Peaks guide site. Not affiliated with Little
+            Chicken, XSEED, Marvelous, Steam, Nintendo, or Google Play.
           </span>
         </Container>
       </div>

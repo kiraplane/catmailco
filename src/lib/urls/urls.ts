@@ -1,7 +1,7 @@
 import { routing } from '@/i18n/routing';
 import type { Locale } from 'next-intl';
 
-export const CANONICAL_BASE_URL = 'https://www.feedthepit.wiki';
+export const CANONICAL_BASE_URL = 'https://www.moonlightpeaks.org';
 
 function cleanBaseUrl(url: string) {
   return url.replace(/\/$/, '');
@@ -11,7 +11,7 @@ function isLocalBaseUrl(url?: string) {
   return !url || /localhost|127\.0\.0\.1|0\.0\.0\.0/.test(url);
 }
 
-function getFeedBaseUrl(url?: string) {
+function getMoonlightPeaksBaseUrl(url?: string) {
   if (!url || isLocalBaseUrl(url)) {
     return undefined;
   }
@@ -19,11 +19,11 @@ function getFeedBaseUrl(url?: string) {
   try {
     const parsedUrl = new URL(url);
     if (
-      parsedUrl.hostname === 'feedthepit.wiki' ||
-      parsedUrl.hostname === 'www.feedthepit.wiki'
+      parsedUrl.hostname === 'moonlightpeaks.org' ||
+      parsedUrl.hostname === 'www.moonlightpeaks.org'
     ) {
       parsedUrl.protocol = 'https:';
-      parsedUrl.hostname = 'www.feedthepit.wiki';
+      parsedUrl.hostname = 'www.moonlightpeaks.org';
       parsedUrl.port = '';
       parsedUrl.pathname = '';
       parsedUrl.search = '';
@@ -59,9 +59,9 @@ export function getBaseUrl(): string {
     process.env.NEXT_PUBLIC_BASE_URL || process.env.BETTER_AUTH_URL;
 
   // In production, never let a local or old-project .env value leak into URLs.
-  const feedBaseUrl = getFeedBaseUrl(configuredBaseUrl);
-  if (feedBaseUrl) {
-    return feedBaseUrl;
+  const moonlightPeaksBaseUrl = getMoonlightPeaksBaseUrl(configuredBaseUrl);
+  if (moonlightPeaksBaseUrl) {
+    return moonlightPeaksBaseUrl;
   }
 
   return getCanonicalBaseUrl();

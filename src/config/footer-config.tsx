@@ -9,26 +9,26 @@ export function useFooterLinks(): NestedMenuItem[] {
 
   return [
     {
-      title: t('play.title'),
+      title: t('start.title'),
       items: [
         {
-          title: t('play.items.online'),
-          href: Routes.Play,
+          title: t('start.items.beginner'),
+          href: Routes.BeginnerGuide,
           external: false,
         },
         {
-          title: t('play.items.steam'),
-          href: Routes.Steam,
+          title: t('start.items.release'),
+          href: Routes.ReleaseDate,
           external: false,
         },
         {
-          title: t('play.items.itchIo'),
-          href: Routes.ItchIo,
+          title: t('start.items.demo'),
+          href: Routes.Demo,
           external: false,
         },
         {
-          title: t('play.items.download'),
-          href: Routes.Download,
+          title: t('start.items.platforms'),
+          href: Routes.Platforms,
           external: false,
         },
       ],
@@ -47,23 +47,33 @@ export function useFooterLinks(): NestedMenuItem[] {
           external: false,
         },
         {
-          title: t('guides.items.cards'),
-          href: Routes.Cards,
+          title: t('guides.items.romance'),
+          href: Routes.Romance,
           external: false,
         },
         {
-          title: t('guides.items.monsters'),
-          href: Routes.Monsters,
+          title: t('guides.items.gifts'),
+          href: Routes.Gifts,
+          external: false,
+        },
+        {
+          title: t('guides.items.farming'),
+          href: Routes.Farming,
+          external: false,
+        },
+        {
+          title: t('guides.items.magic'),
+          href: Routes.Magic,
+          external: false,
+        },
+        {
+          title: t('guides.items.nokturna'),
+          href: Routes.Nokturna,
           external: false,
         },
         {
           title: t('guides.items.walkthrough'),
           href: Routes.Walkthrough,
-          external: false,
-        },
-        {
-          title: t('guides.items.achievements'),
-          href: Routes.Achievements,
           external: false,
         },
       ],
@@ -77,13 +87,13 @@ export function useFooterLinks(): NestedMenuItem[] {
           external: false,
         },
         {
-          title: t('official.items.mobile'),
-          href: Routes.Mobile,
+          title: t('official.items.download'),
+          href: Routes.Download,
           external: false,
         },
         {
-          title: t('official.items.fixes'),
-          href: Routes.RenderingFixes,
+          title: t('official.items.cheats'),
+          href: Routes.Cheats,
           external: false,
         },
         {

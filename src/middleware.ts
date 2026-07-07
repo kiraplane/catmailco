@@ -44,27 +44,32 @@ const retiredPublicRouteRedirects: Array<{
   { pattern: /^\/tier-list(?:\/.*)?$/, target: '/guides' },
   { pattern: /^\/save-editor(?:\/.*)?$/, target: '/guides' },
   { pattern: /^\/updates(?:\/.*)?$/, target: '/guides' },
-  { pattern: /^\/itchio\/?$/, target: '/itch-io' },
-  { pattern: /^\/itch-io-feed-the-pit\/?$/, target: '/itch-io' },
-  { pattern: /^\/feed-the-pit-itch-io\/?$/, target: '/itch-io' },
-  { pattern: /^\/download-feed-the-pit\/?$/, target: '/download' },
-  { pattern: /^\/feed-the-pit-download\/?$/, target: '/download' },
-  { pattern: /^\/feed-the-pit-apk\/?$/, target: '/mobile' },
-  { pattern: /^\/android-download\/?$/, target: '/mobile' },
-  { pattern: /^\/feed-the-pit-mobile\/?$/, target: '/mobile' },
-  { pattern: /^\/feed-the-pit-discord\/?$/, target: '/discord' },
-  { pattern: /^\/feed-the-pit-steam\/?$/, target: '/steam' },
-  { pattern: /^\/feed-the-pit-monsters\/?$/, target: '/monsters' },
-  { pattern: /^\/feed-the-pit-cards\/?$/, target: '/cards' },
-  { pattern: /^\/feed-the-pit-walkthrough\/?$/, target: '/walkthrough' },
-  {
-    pattern: /^\/feed-the-pit-act-1(?:\/.*)?$/,
-    target: '/guides/act-1-walkthrough',
-  },
-  {
-    pattern: /^\/feed-the-pit-ending(?:\/.*)?$/,
-    target: '/guides/ending-guide',
-  },
+  { pattern: /^\/steam\/?$/, target: '/release-date' },
+  { pattern: /^\/release\/?$/, target: '/release-date' },
+  { pattern: /^\/moonlight-peaks-release(?:\/.*)?$/, target: '/release-date' },
+  { pattern: /^\/moonlight-peaks-demo(?:\/.*)?$/, target: '/demo' },
+  { pattern: /^\/moonlight-peaks-platforms(?:\/.*)?$/, target: '/platforms' },
+  { pattern: /^\/moonlight-peaks-switch(?:\/.*)?$/, target: '/switch' },
+  { pattern: /^\/moonlight-peaks-switch-2(?:\/.*)?$/, target: '/switch' },
+  { pattern: /^\/moonlight-peaks-steam-deck(?:\/.*)?$/, target: '/steam-deck' },
+  { pattern: /^\/moonlight-peaks-characters(?:\/.*)?$/, target: '/characters' },
+  { pattern: /^\/moonlight-peaks-romance(?:\/.*)?$/, target: '/romance' },
+  { pattern: /^\/moonlight-peaks-gifts(?:\/.*)?$/, target: '/gifts' },
+  { pattern: /^\/moonlight-peaks-gift-guide(?:\/.*)?$/, target: '/gifts' },
+  { pattern: /^\/moonlight-peaks-farming(?:\/.*)?$/, target: '/farming' },
+  { pattern: /^\/moonlight-peaks-magic(?:\/.*)?$/, target: '/magic' },
+  { pattern: /^\/moonlight-peaks-nokturna(?:\/.*)?$/, target: '/nokturna' },
+  { pattern: /^\/download-moonlight-peaks\/?$/, target: '/download' },
+  { pattern: /^\/moonlight-peaks-download\/?$/, target: '/download' },
+  { pattern: /^\/moonlight-peaks-apk\/?$/, target: '/download' },
+  { pattern: /^\/android-download\/?$/, target: '/download' },
+  { pattern: /^\/moonlight-peaks-mobile\/?$/, target: '/platforms' },
+  { pattern: /^\/moonlight-peaks-cheats(?:\/.*)?$/, target: '/cheats' },
+  { pattern: /^\/moonlight-peaks-codes(?:\/.*)?$/, target: '/cheats' },
+  { pattern: /^\/moonlight-peaks-discord\/?$/, target: '/discord' },
+  { pattern: /^\/moonlight-peaks-steam\/?$/, target: '/release-date' },
+  { pattern: /^\/moonlight-peaks-cards\/?$/, target: '/nokturna' },
+  { pattern: /^\/moonlight-peaks-walkthrough\/?$/, target: '/walkthrough' },
 ];
 
 export default async function middleware(req: NextRequest) {
@@ -72,8 +77,11 @@ export default async function middleware(req: NextRequest) {
   const hostHeader = req.headers.get('host');
   const hostname = hostHeader?.split(':')[0].toLowerCase();
   const forwardedProto = req.headers.get('x-forwarded-proto');
-  const productionHosts = new Set(['feedthepit.wiki', 'www.feedthepit.wiki']);
-  const canonicalHost = 'www.feedthepit.wiki';
+  const productionHosts = new Set([
+    'moonlightpeaks.org',
+    'www.moonlightpeaks.org',
+  ]);
+  const canonicalHost = 'www.moonlightpeaks.org';
 
   if (
     hostname &&

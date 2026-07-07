@@ -1,13 +1,12 @@
-# Feed The Pit Wiki
+# Moonlight Peaks Wiki
 
-Independent guide and browser-play site for Feed The Pit.
+Independent guide site for Moonlight Peaks at `https://www.moonlightpeaks.org`.
 
 ## Scope
 
-- Steam Act 1 guide hub for the Curious Fox Sox investigative horror game.
-- Core pages for cards, monsters, walkthrough, endings, achievements, Steam, downloads, Discord, rendering fixes, and mobile/APK safety.
-- `/play-online` self-hosts the authorized mooncrustgames HTML5 browser build from itch.io and explains how it differs from the Steam release.
-- No codes page, tier list, APK mirror, cracked client, save editor, or fake future-act claims.
+- Launch-week wiki hub for the cozy-gothic supernatural farming sim by Little Chicken, published by XSEED Games and Marvelous Europe.
+- Core pages for beginner guide, release date, demo, platforms, Switch, Steam Deck, romance, characters, gifts, farming, magic, Nokturna, fishing, cheats safety, download, Discord, and legal/disclaimer.
+- No fake codes page, tier list, APK mirror, cracked client, trainer download, save editor, or unverified database tables.
 
 ## Development
 
@@ -22,12 +21,13 @@ pnpm build
 Canonical domain:
 
 ```txt
-https://www.feedthepit.wiki
+https://www.moonlightpeaks.org
 ```
 
 ## Source Rules
 
-- Prefer official Steam, Steam Community, Curious Fox Sox, YouTube, and itch.io sources.
-- Treat Acts 2 and 3 as pending until official updates confirm playable content.
-- Keep the Steam horror game separate from the mooncrustgames browser incremental.
-- Avoid unsafe downloads, APK mirrors, cheats, scripts, modified clients, and fake code generators.
+- Prefer official Moonlight Peaks, Steam, Nintendo, Google Play, XSEED, and Little Chicken sources.
+- Use YouTube videos as cross-checks and covers, not as copied article bodies.
+- Treat gift, fish, crop, and Nokturna tables as launch-week evolving data until live-game verification is stable.
+- Keep PS5/Xbox and codes terms as watch/ignore unless official platform or redeem-code evidence appears.
+- Avoid unsafe downloads, APK mirrors, trainers, scripts, modified clients, and fake code generators.

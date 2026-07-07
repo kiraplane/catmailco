@@ -20,18 +20,18 @@ export const websiteConfig: WebsiteConfig = {
   },
   metadata: {
     images: {
-      ogImage: '/feedthepit/feed-the-pit-header.jpg',
-      logoLight: '/feedthepit/feed-the-pit-header.jpg',
-      logoDark: '/feedthepit/feed-the-pit-header.jpg',
+      ogImage: 'https://i.ytimg.com/vi/Z_rxfOWb54I/hq720.jpg',
+      logoLight: '/android-chrome-192x192.png',
+      logoDark: '/android-chrome-192x192.png',
     },
     social: {
       github: '',
       twitter: '',
       blueSky: '',
-      discord: 'https://discord.gg/WMdgNGB9Zc',
+      discord: 'https://discord.com/invite/heWNF8A8Aw',
       mastodon: '',
       linkedin: '',
-      youtube: 'https://www.youtube.com/@CuriousFoxSox',
+      youtube: 'https://www.youtube.com/@XSEEDgames',
     },
   },
   features: {
@@ -75,8 +75,8 @@ export const websiteConfig: WebsiteConfig = {
   },
   mail: {
     provider: 'resend',
-    fromEmail: 'Feed The Pit <hello@feedthepit.wiki>',
-    supportEmail: 'hello@feedthepit.wiki',
+    fromEmail: 'Moonlight Peaks <hello@moonlightpeaks.org>',
+    supportEmail: 'hello@moonlightpeaks.org',
   },
   newsletter: {
     enable: false,

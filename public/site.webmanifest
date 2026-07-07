@@ -1,11 +1,11 @@
 {
-  "name": "Feed The Pit Wiki",
-  "short_name": "Pit Wiki",
-  "description": "Feed The Pit wiki for Act 1 guides, cards, monsters, walkthroughs, achievements, play online, Steam, and safe downloads.",
+  "name": "Moonlight Peaks Wiki",
+  "short_name": "Peaks Wiki",
+  "description": "Moonlight Peaks wiki for beginner guides, romance, gifts, farming, magic, Nokturna, platforms, demo, Switch, Steam Deck, and safe cheats.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0B0708",
-  "theme_color": "#E3483B",
+  "background_color": "#120719",
+  "theme_color": "#C77DFF",
   "icons": [
     {
       "src": "/favicon-32x32.png",

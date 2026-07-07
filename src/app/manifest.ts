@@ -23,12 +23,12 @@ import type { MetadataRoute } from 'next';
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: defaultMessages.Metadata.name,
-    short_name: 'Pit Wiki',
+    short_name: 'Peaks Wiki',
     description: defaultMessages.Metadata.description,
     start_url: '/',
     display: 'standalone',
-    background_color: '#0B0708',
-    theme_color: '#E3483B',
+    background_color: '#120719',
+    theme_color: '#C77DFF',
     icons: [
       {
         src: '/favicon-32x32.png',

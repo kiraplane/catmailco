@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-/* Feed The Pit - investigative horror guide theme */
+/* Moonlight Peaks - investigative horror guide theme */
 
 :root {
   --font-noto-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
@@ -389,7 +389,7 @@ body {
 }
 
 /*
- * Feed The Pit theme colors
+ * Moonlight Peaks theme colors
  */
 .theme-default {
   --primary: #e3483b;
