@@ -1,8 +1,8 @@
 {
   "Metadata": {
-    "name": "Esports Manager 2026",
-    "title": "Esports Manager 2026 Wiki - Guides, Tactics, EMDB and Steam",
-    "description": "Esports Manager 2026 wiki for beginner guides, tactics, scouting, transfers, contracts, training, sponsors, EMDB, Steam, demo, and safe links."
+    "name": "Cat Mail Co.",
+    "title": "Cat Mail Co. Wiki - Guides, Walkthrough and Co-op Tips",
+    "description": "Cat Mail Co. wiki with beginner guides for parcel sorting, stamps, moonlight, co-op, walkthroughs, Steam, demo, platforms, and safe downloads."
   },
   "Common": {
     "premium": "Premium",
@@ -54,7 +54,7 @@
   },
   "PricingPage": {
     "title": "Pricing",
-    "description": "Optional supporter plans for keeping Esports Manager 2026 Wiki maintained",
+    "description": "Optional supporter plans for keeping Cat Mail Co. Wiki maintained",
     "subtitle": "Simple support options for readers who want to help maintain current guides and hosting",
     "monthly": "Monthly",
     "yearly": "Yearly",
@@ -80,11 +80,11 @@
   "PricePlans": {
     "free": {
       "name": "Free",
-      "description": "Browse Esports Manager 2026 Wiki with no payment required",
+      "description": "Browse Cat Mail Co. Wiki with no payment required",
       "features": {
         "feature-1": "Launch, platform, demo, and official-link guidance",
-        "feature-2": "Beginner, scouting, contracts, training, tactics, tournaments, and sponsor guides",
-        "feature-3": "Steam, demo, EMDB, Steam Deck, download, Discord, and safety pages",
+        "feature-2": "Beginner, package sorting, stamps and labels, moonlight, tactics, co-op, and sponsor guides",
+        "feature-3": "Steam, demo, parcel guides, Steam Deck, download, Discord, and safety pages",
         "feature-4": "Guide pages updated as sources change"
       },
       "limits": {
@@ -113,7 +113,7 @@
     },
     "max": {
       "name": "Backer",
-      "description": "For heavier support of Esports Manager 2026 Wiki maintenance",
+      "description": "For heavier support of Cat Mail Co. Wiki maintenance",
       "features": {
         "feature-1": "Support expanded guide coverage",
         "feature-2": "Help fund more frequent source reviews",
@@ -297,22 +297,22 @@
         "title": "Platforms"
       },
       "database": {
-        "title": "EMDB"
+        "title": "parcel guides"
       },
       "tools": {
         "title": "Tactics"
       },
       "romance": {
-        "title": "Roster"
+        "title": "Post Office"
       },
       "farming": {
-        "title": "Contracts"
+        "title": "Stamps and Labels"
       },
       "magic": {
-        "title": "Training"
+        "title": "Moonlight"
       },
       "nokturna": {
-        "title": "Sponsors"
+        "title": "Walkthrough"
       },
       "download": {
         "title": "Download"
@@ -322,7 +322,7 @@
       }
     },
     "footer": {
-      "tagline": "Independent Esports Manager 2026 wiki for Steam launch setup, scouting, contracts, tactics, EMDB, demo, and safe links.",
+      "tagline": "Cat Mail Co. guide hub for package sorting, stamps, moonlight, co-op, walkthroughs, Steam, platforms, and safe links.",
       "start": {
         "title": "Start",
         "items": {
@@ -337,30 +337,30 @@
         "items": {
           "all": "All Guides",
           "beginner": "Beginner Guide",
-          "romance": "Scouting",
-          "gifts": "Contracts",
-          "farming": "Training",
-          "magic": "Best Tactics",
-          "nokturna": "Tournaments",
-          "walkthrough": "Sponsors"
+          "romance": "Package Sorting",
+          "gifts": "Stamps and Labels",
+          "farming": "Moonlight",
+          "magic": "Tips and Tricks",
+          "nokturna": "Co-op",
+          "walkthrough": "Walkthrough"
         }
       },
       "database": {
         "title": "Data",
         "items": {
-          "all": "EMDB Guide",
+          "all": "parcel guides Guide",
           "characters": "Create Org",
-          "families": "Scouting",
-          "locations": "Contracts",
-          "items": "Training"
+          "families": "Package Sorting",
+          "locations": "Stamps and Labels",
+          "items": "Moonlight"
         }
       },
       "tools": {
         "title": "Match Day",
         "items": {
-          "all": "Best Tactics",
-          "platformPicker": "Tournaments",
-          "romanceTracker": "Sponsors",
+          "all": "Tips and Tricks",
+          "platformPicker": "Co-op",
+          "romanceTracker": "Walkthrough",
           "itemTracker": "Review",
           "farmingCalculator": "Steam Deck"
         }

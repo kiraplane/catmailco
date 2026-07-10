@@ -20,18 +20,19 @@ export const websiteConfig: WebsiteConfig = {
   },
   metadata: {
     images: {
-      ogImage: 'https://i.ytimg.com/vi/hb_t9aD3smo/hq720.jpg',
-      logoLight: '/android-chrome-192x192.png',
-      logoDark: '/android-chrome-192x192.png',
+      ogImage:
+        'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4380490/6e4907425b2795c1c7e35dd454d4970266178288/capsule_616x353.jpg',
+      logoLight: '/catmailco-logo.svg',
+      logoDark: '/catmailco-logo.svg',
     },
     social: {
       github: '',
-      twitter: '',
-      blueSky: '',
-      discord: '',
+      twitter: 'https://x.com/MaracasStudio',
+      blueSky: 'https://bsky.app/profile/maracasstudio.bsky.social',
+      discord: 'https://discord.gg/qq6wnVMZTX',
       mastodon: '',
       linkedin: '',
-      youtube: '',
+      youtube: 'https://www.youtube.com/channel/UCk4JZ9emeFFx1_IOh-HF-Yw',
     },
   },
   features: {
@@ -75,8 +76,8 @@ export const websiteConfig: WebsiteConfig = {
   },
   mail: {
     provider: 'resend',
-    fromEmail: 'Esports Manager 2026 <hello@esportsmanager.wiki>',
-    supportEmail: 'hello@esportsmanager.wiki',
+    fromEmail: 'Cat Mail Co. <hello@catmailco.org>',
+    supportEmail: 'hello@catmailco.org',
   },
   newsletter: {
     enable: false,

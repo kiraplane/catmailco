@@ -42,137 +42,23 @@ const retiredPublicRouteRedirects: Array<{
   { pattern: /^\/payment(?:\/.*)?$/, target: '/' },
   { pattern: /^\/codes(?:\/.*)?$/, target: '/' },
   { pattern: /^\/tier-list(?:\/.*)?$/, target: '/guides' },
-  { pattern: /^\/save-editor(?:\/.*)?$/, target: '/guides' },
-  { pattern: /^\/updates(?:\/.*)?$/, target: '/guides' },
   { pattern: /^\/steam\/?$/, target: '/release-date' },
   { pattern: /^\/release\/?$/, target: '/release-date' },
-  {
-    pattern: /^\/esports-manager-2026-release(?:\/.*)?$/,
-    target: '/release-date',
-  },
-  { pattern: /^\/esports-manager-2026-demo(?:\/.*)?$/, target: '/demo' },
-  {
-    pattern: /^\/esports-manager-2026-platforms(?:\/.*)?$/,
-    target: '/platforms',
-  },
-  { pattern: /^\/esports-manager-2026-switch(?:\/.*)?$/, target: '/platforms' },
-  {
-    pattern: /^\/esports-manager-2026-switch-2(?:\/.*)?$/,
-    target: '/platforms',
-  },
-  {
-    pattern: /^\/esports-manager-2026-steam-deck(?:\/.*)?$/,
-    target: '/steam-deck',
-  },
-  { pattern: /^\/esports-manager-2026-database(?:\/.*)?$/, target: '/emdb' },
-  {
-    pattern: /^\/esports-manager-2026-character-database(?:\/.*)?$/,
-    target: '/guides/scouting-transfers',
-  },
-  {
-    pattern: /^\/esports-manager-2026-characters-database(?:\/.*)?$/,
-    target: '/guides/scouting-transfers',
-  },
-  {
-    pattern: /^\/esports-manager-2026-families(?:\/.*)?$/,
-    target: '/guides/scouting-transfers',
-  },
-  {
-    pattern: /^\/esports-manager-2026-family-database(?:\/.*)?$/,
-    target: '/guides/scouting-transfers',
-  },
-  {
-    pattern: /^\/esports-manager-2026-locations(?:\/.*)?$/,
-    target: '/guides/tournaments-majors',
-  },
-  {
-    pattern: /^\/esports-manager-2026-location-database(?:\/.*)?$/,
-    target: '/guides/tournaments-majors',
-  },
-  { pattern: /^\/esports-manager-2026-items(?:\/.*)?$/, target: '/emdb' },
-  {
-    pattern: /^\/esports-manager-2026-tools(?:\/.*)?$/,
-    target: '/best-tactics',
-  },
-  {
-    pattern: /^\/esports-manager-2026-platform-picker(?:\/.*)?$/,
-    target: '/platforms',
-  },
-  {
-    pattern: /^\/esports-manager-2026-romance-tracker(?:\/.*)?$/,
-    target: '/guides/scouting-transfers',
-  },
-  {
-    pattern: /^\/esports-manager-2026-item-tracker(?:\/.*)?$/,
-    target: '/emdb',
-  },
-  {
-    pattern: /^\/esports-manager-2026-farming-calculator(?:\/.*)?$/,
-    target: '/guides/contracts-budget',
-  },
-  {
-    pattern: /^\/esports-manager-2026-crop-calculator(?:\/.*)?$/,
-    target: '/guides/contracts-budget',
-  },
-  {
-    pattern: /^\/esports-manager-2026-characters(?:\/.*)?$/,
-    target: '/guides/scouting-transfers',
-  },
-  {
-    pattern: /^\/esports-manager-2026-romance(?:\/.*)?$/,
-    target: '/guides/scouting-transfers',
-  },
-  {
-    pattern: /^\/esports-manager-2026-gifts(?:\/.*)?$/,
-    target: '/guides/contracts-budget',
-  },
-  {
-    pattern: /^\/esports-manager-2026-gift-guide(?:\/.*)?$/,
-    target: '/guides/contracts-budget',
-  },
-  {
-    pattern: /^\/esports-manager-2026-farming(?:\/.*)?$/,
-    target: '/guides/training-morale',
-  },
-  {
-    pattern: /^\/esports-manager-2026-magic(?:\/.*)?$/,
-    target: '/best-tactics',
-  },
-  {
-    pattern: /^\/esports-manager-2026-nokturna(?:\/.*)?$/,
-    target: '/guides/tournaments-majors',
-  },
-  { pattern: /^\/download-esports-manager-2026\/?$/, target: '/download' },
-  { pattern: /^\/esports-manager-2026-download\/?$/, target: '/download' },
-  { pattern: /^\/esports-manager-2026-apk\/?$/, target: '/download' },
+  { pattern: /^\/cat-mail-co-release(?:\/.*)?$/, target: '/release-date' },
+  { pattern: /^\/cat-mail-co-price(?:\/.*)?$/, target: '/release-date' },
+  { pattern: /^\/cat-mail-co-demo(?:\/.*)?$/, target: '/demo' },
+  { pattern: /^\/cat-mail-co-switch(?:\/.*)?$/, target: '/platforms' },
+  { pattern: /^\/cat-mail-co-ps5(?:\/.*)?$/, target: '/platforms' },
+  { pattern: /^\/cat-mail-co-xbox(?:\/.*)?$/, target: '/platforms' },
+  { pattern: /^\/cat-mail-co-mobile(?:\/.*)?$/, target: '/platforms' },
+  { pattern: /^\/cat-mail-co-apk(?:\/.*)?$/, target: '/download' },
+  { pattern: /^\/download-cat-mail-co\/?$/, target: '/download' },
   { pattern: /^\/android-download\/?$/, target: '/download' },
-  { pattern: /^\/esports-manager-2026-mobile\/?$/, target: '/platforms' },
-  {
-    pattern: /^\/esports-manager-2026-cheats(?:\/.*)?$/,
-    target: '/mods-and-cheats',
-  },
-  {
-    pattern: /^\/esports-manager-2026-codes(?:\/.*)?$/,
-    target: '/mods-and-cheats',
-  },
-  { pattern: /^\/esports-manager-2026-discord\/?$/, target: '/discord' },
-  { pattern: /^\/esports-manager-2026-steam\/?$/, target: '/release-date' },
-  {
-    pattern: /^\/esports-manager-2026-cards\/?$/,
-    target: '/guides/tournaments-majors',
-  },
-  {
-    pattern: /^\/esports-manager-2026-walkthrough\/?$/,
-    target: '/guides/beginner-guide',
-  },
-  {
-    pattern: /^\/esports-manager-2026-tactics(?:\/.*)?$/,
-    target: '/best-tactics',
-  },
-  {
-    pattern: /^\/esports-manager-2026-tips(?:\/.*)?$/,
-    target: '/guides/beginner-guide',
-  },
+  { pattern: /^\/cat-mail-co-discord\/?$/, target: '/discord' },
+  { pattern: /^\/cat-mail-co-steam\/?$/, target: '/download' },
+  { pattern: /^\/cat-mail-co-walkthrough\/?$/, target: '/walkthrough' },
+  { pattern: /^\/cat-mail-co-tips(?:\/.*)?$/, target: '/tips' },
+  { pattern: /^\/cat-mail-co-co-op(?:\/.*)?$/, target: '/co-op' },
 ];
 
 export default async function middleware(req: NextRequest) {
@@ -180,11 +66,8 @@ export default async function middleware(req: NextRequest) {
   const hostHeader = req.headers.get('host');
   const hostname = hostHeader?.split(':')[0].toLowerCase();
   const forwardedProto = req.headers.get('x-forwarded-proto');
-  const productionHosts = new Set([
-    'esportsmanager.wiki',
-    'www.esportsmanager.wiki',
-  ]);
-  const canonicalHost = 'www.esportsmanager.wiki';
+  const productionHosts = new Set(['catmailco.org', 'www.catmailco.org']);
+  const canonicalHost = 'www.catmailco.org';
 
   if (
     hostname &&

@@ -10,9 +10,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   return constructMetadata({
-    title: 'Terms of Service | Esports Manager 2026 Wiki',
+    title: 'Terms of Service | Cat Mail Co. Guide',
     description:
-      'Terms for using Esports Manager 2026 Wiki, an independent Esports Manager 2026 guide site.',
+      'Terms for using Cat Mail Co. Guide, an independent Cat Mail Co. guide site.',
     locale,
     pathname: '/terms',
   });
@@ -20,28 +20,28 @@ export async function generateMetadata({
 
 export default function TermsOfServicePage() {
   return (
-    <div className="bg-[#061018] py-12 text-[#EAF7FF]">
+    <div className="bg-[#23182A] py-12 text-[#FFF8E7]">
       <Container className="max-w-3xl space-y-6 px-4">
         <h1 className="font-display text-4xl font-black">Terms of Service</h1>
-        <p className="leading-8 text-[#A8C7D8]">
-          This site provides independent Esports Manager 2026 guides, source
-          notes, and official-link guidance. It is not affiliated with, endorsed
-          by, sponsored by, or operated by Neurona Games, indie.io, Valve,
-          Steam, Discord, Reddit, X, YouTube, or EMDB.
+        <p className="leading-8 text-[#D7C8D8]">
+          This site provides independent Cat Mail Co. guides, source notes, and
+          official-link guidance. It is not affiliated with, endorsed by,
+          sponsored by, or operated by Maracas Studio, Gamersky Games, Valve,
+          Steam, Discord, X, or YouTube.
         </p>
-        <p className="leading-8 text-[#A8C7D8]">
-          Player data, tactics, contract values, patch behavior, EMDB entries,
-          and platform support can change after game updates. Treat guide pages
-          as community-oriented guidance and verify important details in your
+        <p className="leading-8 text-[#D7C8D8]">
+          Package behavior, controls, patch details, community links, and
+          platform support can change after game updates. Treat guide pages as
+          community-oriented guidance and verify important details in your
           current game version.
         </p>
-        <p className="leading-8 text-[#A8C7D8]">
+        <p className="leading-8 text-[#D7C8D8]">
           Do not use this site to distribute unauthorized game files, unsafe
-          downloads, modified clients, copied roster databases, paid files,
-          trainers, or automation scripts.
+          downloads, modified clients, copied game data, paid files, trainers,
+          cracks, or automation scripts.
         </p>
-        <p className="leading-8 text-[#A8C7D8]">
-          Questions about these terms can be sent to hello@esportsmanager.wiki.
+        <p className="leading-8 text-[#D7C8D8]">
+          Questions about these terms can be sent to hello@catmailco.org.
         </p>
       </Container>
     </div>

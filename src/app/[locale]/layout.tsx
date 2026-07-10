@@ -206,15 +206,6 @@ export default async function LocaleLayout({
     <html suppressHydrationWarning lang={locale}>
       <head>
         <GoogleAnalytics />
-        <link
-          rel="preconnect"
-          href="https://pub-c1d54745e9b34241adf3297da6711a87.r2.dev"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="dns-prefetch"
-          href="https://pub-c1d54745e9b34241adf3297da6711a87.r2.dev"
-        />
         <GoogleAdsense />
         <AffonsoScript />
         <PromotekitScript />

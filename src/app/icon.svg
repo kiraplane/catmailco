@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title>Cat Mail Co. stamp logo</title>
+  <rect width="128" height="128" rx="24" fill="#FFF1D2"/>
+  <path d="M9 22h10V9h14v10h14V9h14v10h14V9h14v10h10V9h14v13h6v14h-10v14h10v14h-10v14h10v14h-6v13H99V95H85v10H71V95H57v10H43V95H29v10H15V92H9V78h10V64H9V50h10V36H9V22Z" fill="#2B1B31"/>
+  <rect x="25" y="25" width="78" height="78" rx="18" fill="#FFB35C"/>
+  <path d="M42 53 50 36l14 12 14-12 8 17v25c0 12-10 21-22 21S42 90 42 78V53Z" fill="#FFF8E7"/>
+  <circle cx="55" cy="68" r="4" fill="#2B1B31"/>
+  <circle cx="74" cy="68" r="4" fill="#2B1B31"/>
+  <path d="M60 78c3 3 6 3 9 0M64 73v7" fill="none" stroke="#2B1B31" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="m45 78-15-3m15 10-15 3m53-10 15-3M83 85l15 3" fill="none" stroke="#2B1B31" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="88" cy="39" r="10" fill="#7AD6CC"/>
+  <path d="m83 39 3 3 6-7" fill="none" stroke="#2B1B31" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

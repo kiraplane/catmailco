@@ -71,12 +71,10 @@ export function constructMetadata({
     },
     icons: {
       icon: [
-        { url: '/favicon.ico' },
-        { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-        { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+        { url: '/catmailco-logo.svg', sizes: 'any', type: 'image/svg+xml' },
       ],
-      shortcut: '/favicon.ico',
-      apple: '/apple-touch-icon.png',
+      shortcut: '/catmailco-logo.svg',
+      apple: '/catmailco-logo.svg',
     },
     metadataBase: new URL(getCanonicalBaseUrl()),
     manifest: `${getCanonicalBaseUrl()}/manifest.webmanifest`,

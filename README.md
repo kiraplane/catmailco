@@ -1,13 +1,14 @@
-# Esports Manager 2026 Wiki
+# Cat Mail Co. Guide
 
-Independent guide site for Esports Manager 2026 at `https://www.esportsmanager.wiki`.
+Independent Cat Mail Co. wiki and guide hub for `https://www.catmailco.org`.
 
 ## Scope
 
-- Launch-week wiki hub for the esports management sim by Neurona Games, published by indie.io.
-- Core pages for beginner guide, organization setup, scouting, transfers, contracts, training, morale, tactics, tournaments, sponsors, release date, demo, platforms, Steam Deck, EMDB, review, download, Discord, and legal/disclaimer.
-- Source-aware guide articles with official links, YouTube-supported decision notes, Google autocomplete demand, and EMDB safety guidance.
-- No fake codes page, tier list, APK mirror, cracked client, trainer download, save editor, or unverified hard-value tables.
+- Launch coverage for the cozy post office simulation by Maracas Studio.
+- Practical pages for beginner flow, package sorting, stamps and labels, moonlight, co-op roles, walkthroughs, and advanced tips.
+- Current status pages for release date, price, Steam demo, platforms, Steam Deck, reviews, downloads, Discord, and legal/disclaimer.
+- Source-aware guide articles that use official Steam information and current YouTube gameplay as cross-checks rather than copied transcripts.
+- No fake codes, tier list, mobile APK, crack, trainer, or unsupported database pages.
 
 ## Development
 
@@ -22,14 +23,12 @@ pnpm build
 Canonical domain:
 
 ```txt
-https://www.esportsmanager.wiki
+https://www.catmailco.org
 ```
 
 ## Source Rules
 
-- Prefer official Esports Manager 2026, Steam, Neurona Games, indie.io, official community, EMDB, and YouTube sources.
-- Use community pages and competitor results as public fact leads with source URLs and confidence labels; do not copy competitor prose or images.
-- Use YouTube videos as cross-checks and covers, not as copied article bodies.
-- Treat ratings, player data, contract values, and tactic recommendations as launch-week evolving data until live-game verification is stable.
-- Keep mobile, console, mods, cheats, and codes terms as watch/ignore unless official evidence appears.
-- Avoid unsafe downloads, APK mirrors, trainers, scripts, modified clients, and fake code generators.
+- Prefer the official Cat Mail Co. Steam store, Steam Community, Maracas Studio channels, and current full-game videos.
+- Keep Windows/Steam as the only confirmed platform until an official console or mobile store page appears.
+- Use YouTube for visual and workflow cross-checks, not transcript spinning.
+- Avoid unsafe downloads, APK mirrors, trainers, cracks, scripts, and fake official claims.

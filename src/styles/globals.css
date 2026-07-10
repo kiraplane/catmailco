@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-/* Esports Manager 2026 - competitive management guide theme */
+/* Cat Mail Co. - cozy postal guide theme */
 
 :root {
   --font-noto-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
@@ -258,46 +258,46 @@
 }
 
 :root {
-  --background: #0a0f0c;
-  --foreground: #f7e8c9;
-  --card: #111612;
-  --card-foreground: #f7e8c9;
-  --popover: #111612;
-  --popover-foreground: #f7e8c9;
+  --background: #23182a;
+  --foreground: #fff8e7;
+  --card: #33233b;
+  --card-foreground: #fff8e7;
+  --popover: #33233b;
+  --popover-foreground: #fff8e7;
 
-  --primary: #d9b56a;
-  --primary-foreground: #15110b;
+  --primary: #ffb35c;
+  --primary-foreground: #24131f;
 
-  --secondary: #6ea69a;
-  --secondary-foreground: #0a0f0c;
+  --secondary: #7ad6cc;
+  --secondary-foreground: #24131f;
 
-  --muted: #141916;
-  --muted-foreground: #c7baa7;
+  --muted: #402c48;
+  --muted-foreground: #d7c8d8;
 
-  --accent: #201418;
-  --accent-foreground: #f7e8c9;
+  --accent: #ff88ac;
+  --accent-foreground: #24131f;
 
-  --destructive: #b5444f;
-  --destructive-foreground: #fff2e0;
+  --destructive: #df526d;
+  --destructive-foreground: #fff8e7;
 
-  --border: #493a34;
-  --input: #493a34;
-  --ring: #d9b56a;
+  --border: #6b536f;
+  --input: #6b536f;
+  --ring: #ffb35c;
 
-  --chart-1: #d9b56a;
-  --chart-2: #6ea69a;
-  --chart-3: #b5444f;
-  --chart-4: #7b2635;
-  --chart-5: #f7e8c9;
+  --chart-1: #ffb35c;
+  --chart-2: #7ad6cc;
+  --chart-3: #ff88ac;
+  --chart-4: #9a6db0;
+  --chart-5: #fff8e7;
 
-  --sidebar: #0a0f0c;
-  --sidebar-foreground: #f7e8c9;
-  --sidebar-primary: #d9b56a;
-  --sidebar-primary-foreground: #15110b;
-  --sidebar-accent: #141916;
-  --sidebar-accent-foreground: #f7e8c9;
-  --sidebar-border: #493a34;
-  --sidebar-ring: #d9b56a;
+  --sidebar: #23182a;
+  --sidebar-foreground: #fff8e7;
+  --sidebar-primary: #ffb35c;
+  --sidebar-primary-foreground: #24131f;
+  --sidebar-accent: #402c48;
+  --sidebar-accent-foreground: #fff8e7;
+  --sidebar-border: #6b536f;
+  --sidebar-ring: #ffb35c;
   --font-sans: var(--font-noto-sans);
   --font-serif: var(--font-noto-serif);
   --font-mono: var(--font-noto-sans-mono);
@@ -383,11 +383,11 @@ body {
 }
 
 /*
- * Esports Manager 2026 theme colors
+ * Cat Mail Co. theme colors
  */
 .theme-default {
-  --primary: #e3483b;
-  --primary-foreground: #170b0a;
+  --primary: #ffb35c;
+  --primary-foreground: #24131f;
 }
 
 .theme-blue {
