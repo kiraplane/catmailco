@@ -10,7 +10,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   return constructMetadata({
-    title: 'Cookie Policy | Cat Mail Co. Guide',
+    title: 'Cookie Policy | Cat Mail Co Guide',
     description:
       'How Cat Mail Co. Guide uses essential cookies, analytics, and similar technologies.',
     locale,

@@ -10,7 +10,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   return constructMetadata({
-    title: 'Terms of Service | Cat Mail Co. Guide',
+    title: 'Terms of Service | Cat Mail Co Guide',
     description:
       'Terms for using Cat Mail Co. Guide, an independent Cat Mail Co. guide site.',
     locale,

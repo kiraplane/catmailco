@@ -73,8 +73,8 @@ export const guides: Guide[] = [
   {
     slug: 'beginner-guide',
     path: '/guides/beginner-guide',
-    title: 'Cat Mail Co. Beginner Guide: Your First Post Office Routine',
-    seoTitle: 'Cat Mail Co. Beginner Guide',
+    title: 'Cat Mail Co Beginner Guide: Your First Post Office Routine',
+    seoTitle: 'Cat Mail Co Beginner Guide',
     seoDescription:
       'Start Cat Mail Co. with a clean parcel flow: receive, inspect, weigh, stamp, label, sort, store, and load mail without losing track of jobs.',
     summary:
@@ -164,8 +164,8 @@ export const guides: Guide[] = [
   {
     slug: 'package-sorting',
     path: '/guides/package-sorting',
-    title: 'Cat Mail Co. Package Sorting Guide: Build a Mail Flow That Scales',
-    seoTitle: 'Cat Mail Co. Package Sorting Guide',
+    title: 'Cat Mail Co Package Sorting Guide: Build a Mail Flow That Scales',
+    seoTitle: 'Cat Mail Co Package Sorting Guide',
     seoDescription:
       'Sort Cat Mail Co. parcels with destination zones, a visible exception shelf, outward-facing labels, and a clean route from boat to counter.',
     summary:
@@ -248,8 +248,8 @@ export const guides: Guide[] = [
   {
     slug: 'stamps-and-labels',
     path: '/guides/stamps-and-labels',
-    title: 'Cat Mail Co. Stamps and Labels Guide: Mark Every Parcel Clearly',
-    seoTitle: 'Cat Mail Co. Stamps and Labels Guide',
+    title: 'Cat Mail Co Stamps and Labels Guide: Mark Every Parcel Clearly',
+    seoTitle: 'Cat Mail Co Stamps and Labels Guide',
     seoDescription:
       'Use destination, weight, fragile, heavy, and decorative marks in Cat Mail Co. without hiding the information your postal workflow needs.',
     summary:
@@ -333,8 +333,8 @@ export const guides: Guide[] = [
   {
     slug: 'night-shift',
     path: '/guides/night-shift',
-    title: 'Cat Mail Co. Night Shift Guide: Moonlight and Hidden Parcels',
-    seoTitle: 'Cat Mail Co. Night Shift and Moonlight Guide',
+    title: 'Cat Mail Co Night Shift Guide: Moonlight and Hidden Parcels',
+    seoTitle: 'Cat Mail Co Night Shift and Moonlight Guide',
     seoDescription:
       'Handle Cat Mail Co. moonlight mechanics with a daytime exception shelf, a night inspection pass, and a clean close-out routine.',
     summary:
@@ -410,8 +410,8 @@ export const guides: Guide[] = [
   {
     slug: 'co-op',
     path: '/co-op',
-    title: 'Cat Mail Co. Co-op Guide: Job Splits for 2, 3, or 4 Players',
-    seoTitle: 'Cat Mail Co. Co-op Guide',
+    title: 'Cat Mail Co Co-op Guide: Job Splits for 2, 3, or 4 Players',
+    seoTitle: 'Cat Mail Co Co-op Guide',
     seoDescription:
       'Run Cat Mail Co. online co-op with practical two-, three-, and four-player roles for counter service, parcel processing, storage, and loading.',
     summary:
@@ -500,8 +500,8 @@ export const guides: Guide[] = [
   {
     slug: 'walkthrough',
     path: '/walkthrough',
-    title: 'Cat Mail Co. Walkthrough: A Spoiler-Light Progression Route',
-    seoTitle: 'Cat Mail Co. Walkthrough and Progression Guide',
+    title: 'Cat Mail Co Walkthrough: A Spoiler-Light Progression Route',
+    seoTitle: 'Cat Mail Co Walkthrough and Progression Guide',
     seoDescription:
       'Follow a spoiler-light Cat Mail Co. walkthrough from the first backlog through new tools, destinations, moonlight parcels, co-op flow, and closing audits.',
     summary:
@@ -585,8 +585,8 @@ export const guides: Guide[] = [
   {
     slug: 'tips',
     path: '/tips',
-    title: 'Cat Mail Co. Tips: 10 Ways to Run a Cleaner Post Office',
-    seoTitle: 'Cat Mail Co. Tips and Tricks',
+    title: 'Cat Mail Co Tips: 10 Ways to Run a Cleaner Post Office',
+    seoTitle: 'Cat Mail Co Tips and Tricks',
     seoDescription:
       'Use 10 practical Cat Mail Co. tips for faster walking, safer labels, cleaner destination zones, night inspections, co-op handoffs, and boat loading.',
     summary:
@@ -670,8 +670,8 @@ export const guides: Guide[] = [
   {
     slug: 'release-date',
     path: '/release-date',
-    title: 'Cat Mail Co. Release Date, Price, and Launch Status',
-    seoTitle: 'Cat Mail Co. Release Date and Price',
+    title: 'Cat Mail Co Release Date, Price, and Launch Status',
+    seoTitle: 'Cat Mail Co Release Date and Price',
     seoDescription:
       'Cat Mail Co. released July 9, 2026 on Steam for Windows. Check its base price, launch discount, demo, developer, languages, and current platform status.',
     summary:
@@ -730,8 +730,8 @@ export const guides: Guide[] = [
   {
     slug: 'demo',
     path: '/demo',
-    title: 'Cat Mail Co. Demo Guide: What to Test Before Buying',
-    seoTitle: 'Cat Mail Co. Demo Download and Guide',
+    title: 'Cat Mail Co Demo Guide: What to Test Before Buying',
+    seoTitle: 'Cat Mail Co Demo Download and Guide',
     seoDescription:
       'Download the official Cat Mail Co. demo on Steam and test parcel handling, post-office layout, moonlight, performance, controls, and online co-op.',
     summary:
@@ -791,8 +791,8 @@ export const guides: Guide[] = [
   {
     slug: 'platforms',
     path: '/platforms',
-    title: 'Cat Mail Co. Platforms: Switch, PS5, Xbox, Mac, and Mobile Status',
-    seoTitle: 'Cat Mail Co. Switch, PS5 and Xbox Status',
+    title: 'Cat Mail Co Platforms: Switch, PS5, Xbox, Mac, and Mobile Status',
+    seoTitle: 'Cat Mail Co Switch, PS5 and Xbox Status',
     seoDescription:
       'Cat Mail Co. is confirmed for Windows on Steam. Check the current status of Nintendo Switch, PS5, Xbox, macOS, Linux, iOS, Android, and Steam Deck.',
     summary:
@@ -857,8 +857,8 @@ export const guides: Guide[] = [
   {
     slug: 'steam-deck',
     path: '/steam-deck',
-    title: 'Cat Mail Co. Steam Deck Guide: Playability, Controls, and Setup',
-    seoTitle: 'Cat Mail Co. Steam Deck Guide',
+    title: 'Cat Mail Co Steam Deck Guide: Playability, Controls, and Setup',
+    seoTitle: 'Cat Mail Co Steam Deck Guide',
     seoDescription:
       'Cat Mail Co. can be observed running on Steam Deck, but official verification and full controller support are unclear. Use this setup and refund-window checklist.',
     summary:
@@ -929,8 +929,8 @@ export const guides: Guide[] = [
   {
     slug: 'review',
     path: '/review',
-    title: 'Cat Mail Co. Review Guide: Should You Buy It?',
-    seoTitle: 'Cat Mail Co. Review - Should You Buy?',
+    title: 'Cat Mail Co Review Guide: Should You Buy It?',
+    seoTitle: 'Cat Mail Co Review - Should You Buy?',
     seoDescription:
       'Decide whether Cat Mail Co. is worth buying based on its relaxed parcel loop, organization freedom, moonlight mystery, online co-op, launch reviews, and demo.',
     summary:
@@ -1002,8 +1002,8 @@ export const guides: Guide[] = [
   {
     slug: 'download',
     path: '/download',
-    title: 'Cat Mail Co. Download: Official Steam and Safe Install Guide',
-    seoTitle: 'Cat Mail Co. Download - Official Steam Link',
+    title: 'Cat Mail Co Download: Official Steam and Safe Install Guide',
+    seoTitle: 'Cat Mail Co Download - Official Steam Link',
     seoDescription:
       'Download Cat Mail Co. safely from Steam for Windows, check minimum requirements, try the official demo, and avoid fake APK, crack, repack, or trainer pages.',
     summary:
@@ -1067,8 +1067,8 @@ export const guides: Guide[] = [
   {
     slug: 'discord',
     path: '/discord',
-    title: 'Cat Mail Co. Discord and Official Community Links',
-    seoTitle: 'Cat Mail Co. Discord and Official Links',
+    title: 'Cat Mail Co Discord and Official Community Links',
+    seoTitle: 'Cat Mail Co Discord and Official Links',
     seoDescription:
       'Find the official Cat Mail Co. Discord, Steam Community, Maracas Studio X, YouTube, Bluesky, and safe ways to verify support or update links.',
     summary:

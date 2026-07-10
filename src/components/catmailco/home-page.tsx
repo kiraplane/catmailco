@@ -156,7 +156,7 @@ const coreModules = [
 ] as const;
 
 const homeTrailer = {
-  title: 'Cat Mail Co. release trailer',
+  title: 'Cat Mail Co release trailer',
   embedUrl: 'https://www.youtube-nocookie.com/embed/RupCdoMTOZ4?rel=0&hl=en',
   watchUrl: 'https://www.youtube.com/watch?v=RupCdoMTOZ4',
   thumbnailUrl: 'https://i.ytimg.com/vi/RupCdoMTOZ4/hqdefault.jpg',

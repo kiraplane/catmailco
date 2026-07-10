@@ -106,8 +106,8 @@ export function getHomeContent(_locale?: Locale | string): HomeContent {
 
   return {
     badge: 'Cat Mail Co. wiki and guide hub',
-    metadataTitle: 'Cat Mail Co. Wiki - Guides, Walkthrough and Co-op Tips',
-    title: 'Cat Mail Co.',
+    metadataTitle: 'Cat Mail Co Wiki - Guides, Walkthrough and Co-op Tips',
+    title: 'Cat Mail Co',
     intro:
       'A cozy post office guide hub for parcel sorting, stamps, moonlight, solo and four-player co-op, walkthroughs, Steam, platforms, and safe downloads.',
     primaryCta: 'Start the beginner guide',
@@ -208,7 +208,7 @@ export function getGuidesIndexContent(
 ): GuidesIndexContent {
   return {
     badge: 'Cat Mail Co. guides',
-    title: 'Cat Mail Co. Guide Hub',
+    title: 'Cat Mail Co Guide Hub',
     intro:
       'Choose a focused guide for your first shift, package sorting, stamps and labels, moonlight, co-op, walkthrough, advanced tips, release and price, demo, platforms, Steam Deck, review, download, or official links.',
     readGuide: 'Read guide',

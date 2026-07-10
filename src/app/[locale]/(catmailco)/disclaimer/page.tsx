@@ -11,7 +11,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   return constructMetadata({
-    title: 'Disclaimer | Cat Mail Co.',
+    title: 'Disclaimer | Cat Mail Co',
     description: 'Disclaimer for Cat Mail Co., an independent game guide site.',
     locale,
     pathname: '/disclaimer',
