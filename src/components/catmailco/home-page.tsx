@@ -474,7 +474,7 @@ export function CatMailCoHomePage({ locale }: { locale?: Locale }) {
               </div>
             </section>
 
-            <section className="grid gap-4 lg:grid-cols-2">
+            <section className="space-y-4">
               <div className="rounded-xl border border-[#6B536F] bg-[#33233B] p-5">
                 <div className="flex gap-3">
                   <Cat className="mt-1 size-5 shrink-0 text-[#FFB35C]" />
@@ -482,7 +482,7 @@ export function CatMailCoHomePage({ locale }: { locale?: Locale }) {
                     <h2 className="font-display text-2xl font-bold">
                       {content.currentFactsTitle}
                     </h2>
-                    <div className="mt-4 grid gap-3">
+                    <div className="mt-4 grid gap-3 md:grid-cols-2">
                       {gameFacts.map((fact) => (
                         <div
                           key={fact.label}
@@ -508,7 +508,7 @@ export function CatMailCoHomePage({ locale }: { locale?: Locale }) {
                     <h2 className="font-display text-2xl font-bold">
                       {content.findPageTitle}
                     </h2>
-                    <div className="mt-4 grid gap-2">
+                    <div className="mt-4 grid gap-2 md:grid-cols-2">
                       {content.coreRouteItems.map((item) =>
                         item.route === 'none' ? null : (
                           <LocaleLink
