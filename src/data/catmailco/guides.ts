@@ -1132,6 +1132,218 @@ export const guides: Guide[] = [
       },
     ],
   },
+  {
+    slug: 'parcel-types',
+    path: '/parcel-types',
+    title: 'Cat Mail Co Parcel Types and Handling Rules',
+    seoTitle: 'Cat Mail Co Parcel Types - Labels, Weight and Handling',
+    seoDescription:
+      'Sort Cat Mail Co parcel types by destination, weight, postage, temperature, repair, light and night-shift handling requirements.',
+    summary:
+      'Read every label before acting, separate exception parcels from normal mail, and route each package through only the stations its properties require.',
+    category: 'Post Office',
+    difficulty: 'Beginner',
+    coverImageUrl: videos.sorting.thumbnailUrl,
+    publishedAt,
+    updatedAt: publishedAt,
+    sourceStrategy: 'community_crosscheck',
+    video: videos.sorting,
+    videoSearchQueries: ['Cat Mail Co parcel types', 'Cat Mail Co sorting guide'],
+    sourceNotes:
+      'Parcel properties were organized from current gameplay videos and the special-room systems consistently documented by competing wikis.',
+    tags: ['Parcels', 'Sorting', 'Labels'],
+    relatedRoutes: ['/guides/package-sorting', '/special-rooms', '/boat-destinations', '/tips'],
+    body: [
+      {
+        heading: 'Read properties before choosing a station',
+        paragraphs: [
+          'A parcel can combine destination, weight, postage, and a special handling property. Read the full label first; stamping a package before noticing cold, heat, darkness, light, or damage creates extra walking and makes mistakes harder to spot.',
+          'Keep normal mail in the main lane and move every unclear or special parcel to one visible exception shelf. That protects the counter while you decide which room or tool it needs.',
+        ],
+      },
+      {
+        heading: 'Parcel decision table',
+        paragraphs: [
+          'Standard parcels move through inspect, weigh, postage, label, destination sort, storage, and boat loading. Temperature, repair, dark, light, night, or fragile properties add a detour before final storage.',
+        ],
+        bullets: [
+          'Standard: complete weight, postage, label, and destination checks.',
+          'Cold or heated: use the matching room before final sort.',
+          'Damaged: repair first, then reread the label.',
+          'Dark or light-sensitive: use the marked special room and avoid mixing shelves.',
+          'Night package: keep it visible until the correct night process is available.',
+        ],
+      },
+      {
+        heading: 'Finish one parcel state at a time',
+        paragraphs: [
+          'Do not leave half-finished parcels across multiple tables. Complete one state, place it in a clearly named zone, then start the next job. In co-op, assign one player to exceptions so special mail does not disappear into the normal queue.',
+        ],
+      },
+    ],
+    faq: [
+      { question: 'How do I identify a parcel type?', answer: 'Read destination, weight, postage, and every handling icon before stamping or storing it.' },
+      { question: 'Where should unclear parcels go?', answer: 'Use one visible exception shelf until the label or required room is understood.' },
+    ],
+  },
+  {
+    slug: 'special-rooms',
+    path: '/special-rooms',
+    title: 'Cat Mail Co Special Rooms Guide',
+    seoTitle: 'Cat Mail Co Special Rooms - Cold, Heated, Repair, Dark and Light',
+    seoDescription:
+      'Use Cat Mail Co cold, heated, repair, dark and light rooms with a clean exception route and co-op room ownership.',
+    summary:
+      'Special rooms are exception stations, not storage. Send only the parcels that show the matching property, complete the process, and return them to the normal outbound flow.',
+    category: 'Post Office',
+    difficulty: 'Intermediate',
+    coverImageUrl: videos.organizing.thumbnailUrl,
+    publishedAt,
+    updatedAt: publishedAt,
+    sourceStrategy: 'community_crosscheck',
+    video: videos.organizing,
+    videoSearchQueries: ['Cat Mail Co special rooms', 'Cat Mail Co cold heated repair room'],
+    sourceNotes:
+      'Room categories were cross-checked across current gameplay and exact-match competitor databases; exact timings remain update-sensitive.',
+    tags: ['Rooms', 'Exceptions', 'Workflow'],
+    relatedRoutes: ['/parcel-types', '/guides/night-shift', '/co-op', '/walkthrough'],
+    body: [
+      {
+        heading: 'Match the icon, not the parcel color',
+        paragraphs: [
+          'Use the package label or handling icon to choose a room. Similar-looking parcels can require different treatment, and decorative colors are not a safe substitute for reading the job.',
+        ],
+        bullets: [
+          'Cold room: temperature-sensitive cold parcels.',
+          'Heated room: parcels that require warmth before sorting.',
+          'Repair room: damaged or broken mail before final checks.',
+          'Dark room: mail that must avoid normal light exposure.',
+          'Light room: mail that needs the marked illuminated process.',
+        ],
+      },
+      {
+        heading: 'Build a one-way exception loop',
+        paragraphs: [
+          'Place the exception shelf near the path to the special rooms, not beside completed outgoing mail. Move a parcel from exception shelf to room, then back to the inspection point for one final label check before destination storage.',
+          'In co-op, one player can own room processing while another keeps receiving and normal sorting moving. Announce when a parcel is complete so nobody repeats the treatment.',
+        ],
+      },
+      {
+        heading: 'Fix a room that appears not to work',
+        paragraphs: [
+          'Confirm the parcel has the matching property, the job is not already complete, and the room prompt is active. Put the parcel down, reread it, and retry from the correct interaction point before resetting the day.',
+        ],
+      },
+    ],
+    faq: [
+      { question: 'Are special rooms storage?', answer: 'No. They process exception properties; finished parcels should return to normal destination storage.' },
+      { question: 'Can one parcel need more than one room?', answer: 'Read every current handling property and complete each required state before outbound sorting.' },
+    ],
+  },
+  {
+    slug: 'boat-destinations',
+    path: '/boat-destinations',
+    title: 'Cat Mail Co Boat Destinations and Loading Guide',
+    seoTitle: 'Cat Mail Co Boat Destinations - Sorting and Loading Route',
+    seoDescription:
+      'Sort Cat Mail Co parcels by boat destination, verify labels, stage outbound mail, and avoid loading the wrong route.',
+    summary:
+      'Destination sorting is the final accuracy check. Stage each route separately, audit the label, then load only the boat or outbound area that matches.',
+    category: 'Post Office',
+    difficulty: 'Beginner',
+    coverImageUrl: steamScreenshot,
+    publishedAt,
+    updatedAt: publishedAt,
+    sourceStrategy: 'user_intent_youtube',
+    video: videos.walkthrough,
+    videoSearchQueries: ['Cat Mail Co boat destinations', 'Cat Mail Co loading mail'],
+    sourceNotes:
+      'The route focuses on the destination workflow visible in current full-game walkthroughs; destination names should be read from the live label.',
+    tags: ['Boat', 'Destinations', 'Loading'],
+    relatedRoutes: ['/parcel-types', '/guides/package-sorting', '/walkthrough', '/co-op'],
+    body: [
+      {
+        heading: 'Create a zone for every active destination',
+        paragraphs: [
+          'Before the outgoing rush, make one clearly separated staging area per current destination. Face labels outward and keep unfinished parcels away from those zones so a quick pickup never becomes a bad shipment.',
+        ],
+      },
+      {
+        heading: 'Run a three-point loading audit',
+        paragraphs: [
+          'At loading time, verify the destination on the parcel, the staging-zone label, and the current boat or outgoing-route marker. All three must agree. If one does not, return the package to inspection rather than guessing.',
+        ],
+        bullets: [
+          'Parcel destination is readable.',
+          'Postage and handling steps are complete.',
+          'Staging zone matches the parcel.',
+          'Boat or outbound marker matches the staging zone.',
+        ],
+      },
+      {
+        heading: 'Co-op loading roles',
+        paragraphs: [
+          'Use one loader and one auditor during busy departures. The loader moves only from a confirmed zone; the auditor keeps exceptions and late mail out of the lane. Swap roles after the boat leaves, not mid-load.',
+        ],
+      },
+    ],
+    faq: [
+      { question: 'How do I avoid loading the wrong boat?', answer: 'Match parcel, staging-zone, and outbound destination labels before every load.' },
+      { question: 'Should unfinished mail be staged by destination?', answer: 'No. Keep unfinished mail in a separate exception or work-in-progress area.' },
+    ],
+  },
+  {
+    slug: 'achievements',
+    path: '/achievements',
+    title: 'Cat Mail Co Achievements and Completion Checklist',
+    seoTitle: 'Cat Mail Co Achievements - Completion Checklist and Save Tips',
+    seoDescription:
+      'Plan Cat Mail Co achievements with sorting, night-shift, co-op, stamp, boat and completion checks without risking your save.',
+    summary:
+      'Use a save-friendly checklist and record completed milestones after each shift. Exact achievement names can change, but the required play patterns are easy to prepare for.',
+    category: 'Start',
+    difficulty: 'Intermediate',
+    coverImageUrl: steamCover,
+    publishedAt,
+    updatedAt: publishedAt,
+    sourceStrategy: 'community_crosscheck',
+    videoSearchQueries: ['Cat Mail Co achievements', 'Cat Mail Co 100 percent'],
+    sourceNotes:
+      'Achievement themes were cross-checked against current competitor coverage; the live Steam achievement list remains the source of truth for exact names and unlock state.',
+    tags: ['Achievements', 'Completion', 'Checklist'],
+    relatedRoutes: ['/walkthrough', '/tips', '/guides/night-shift', '/co-op'],
+    body: [
+      {
+        heading: 'Prepare one clean completion save',
+        paragraphs: [
+          'Keep a main save where you finish normal parcel, special-room, night-shift, boat, stamp, and co-op patterns without abandoning jobs. After each session, compare Steam unlocks with what you completed before repeating a long route.',
+        ],
+      },
+      {
+        heading: 'Completion categories to track',
+        paragraphs: [
+          'Exact names belong to the current platform list, but most completion work fits a small set of systems. Mark the system and the session where you met it so delayed unlocks are easier to diagnose.',
+        ],
+        bullets: [
+          'Core parcel processing and accuracy milestones',
+          'Stamp, label, sorting, and destination milestones',
+          'Special-room and night-package tasks',
+          'Boat loading and shift-completion goals',
+          'Co-op or multiplayer actions when explicitly required',
+        ],
+      },
+      {
+        heading: 'Fix a missing unlock safely',
+        paragraphs: [
+          'Finish the shift, return to the title screen, and let Steam sync before repeating the condition. If it still fails, record version and save context for the official community rather than editing the save or installing an achievement tool.',
+        ],
+      },
+    ],
+    faq: [
+      { question: 'Where can I see exact achievement names?', answer: 'Use the current Steam achievement list for the exact names and unlock state.' },
+      { question: 'What if an achievement does not unlock?', answer: 'Complete the shift, allow platform sync, then retry once and report the version/save context if it still fails.' },
+    ],
+  },
 ];
 
 export const featuredGuides = guides.filter((guide) =>

@@ -55,6 +55,10 @@ const wikiNavRoutes = [
       '/guides/package-sorting',
       '/guides/stamps-and-labels',
       '/guides/night-shift',
+      '/parcel-types',
+      '/special-rooms',
+      '/boat-destinations',
+      '/achievements',
     ],
   },
   {
