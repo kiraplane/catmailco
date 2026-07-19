@@ -71,6 +71,75 @@ const videos = {
 
 export const guides: Guide[] = [
   {
+    slug: 'patch-3-storage-parcel-fixes',
+    path: '/guides/patch-3-storage-parcel-fixes',
+    title: 'Cat Mail Co Patch #3: Storage and Parcel Fixes',
+    seoTitle: 'Cat Mail Co Patch #3 - Storage & Parcel Fixes',
+    seoDescription:
+      'See Cat Mail Co Patch #3 changes for storage tags, parcel piles, save slots, demo keys, lobby re-hosting and planned controller support.',
+    summary:
+      'Patch #3 improves storage labels and parcel flow, repairs several dock, customer-area and lobby bugs, and names controller support as the next quality-of-life focus.',
+    category: 'Safety',
+    difficulty: 'Status',
+    coverImageUrl: steamScreenshot,
+    publishedAt: '2026-07-19',
+    updatedAt: '2026-07-19',
+    sourceStrategy: 'official',
+    videoSearchQueries: [
+      'Cat Mail Co Patch 3',
+      'Cat Mail Co storage tags parcel fix',
+    ],
+    sourceNotes:
+      'Summarized from the official July 17 Steam Patch Note #3. Planned controller and input features are separated from changes already live.',
+    tags: ['Patch notes', 'Storage', 'Parcels'],
+    relatedRoutes: [
+      '/guides/patch-2-save-multiplayer-fixes',
+      '/co-op',
+      '/walkthrough',
+      '/tips',
+    ],
+    body: [
+      {
+        heading: 'Storage and pile changes now live',
+        paragraphs: [
+          'Patch #3 adds more storage tags, smoke feedback when clearing secondary piles, and slightly faster pile clearing during the final two levels. The newest save now appears at the top of the save-slot list.',
+          'Keep the current sorting layout until you see the new labels, then rename or reposition only the storage zones that became ambiguous. The faster final pile stages should reduce late-shift congestion without changing the core destination-sorting rule.',
+        ],
+      },
+      {
+        heading: 'Parcel, dock and save fixes',
+        paragraphs: [
+          'The patch repairs old demo saves missing bright and dark keys, parcels stuck in the customer area, incorrect parcel scale in stacks, and parcels respawning around the dock after being dropped near some main-pile stages.',
+          'Load the affected save before starting over. Check keys, one customer handoff, one dock drop and one pile transition so the old failure can be ruled out quickly.',
+        ],
+      },
+      {
+        heading: 'Lobby fix and what is still planned',
+        paragraphs: [
+          'Leaving and re-hosting should no longer break the lobby. Minor localization and lovers-effect issues were also fixed.',
+          'Controller support, input rebinding, inverted mouse Y and toggle sprint are planned quality-of-life work, not live Patch #3 features. Keep platform pages worded as current-status pages until those controls ship.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'What changed in Cat Mail Co Patch #3?',
+        answer:
+          'It adds storage tags and pile feedback, speeds late pile clearing, changes save ordering and fixes parcels, old demo keys and lobby re-hosting.',
+      },
+      {
+        question: 'Does Patch #3 add controller support?',
+        answer:
+          'No. Controller support is listed as planned follow-up work, not a live Patch #3 feature.',
+      },
+      {
+        question: 'Should I restart an old demo save?',
+        answer:
+          'Load it first. The patch specifically fixes missing bright and dark keys in old demo saves.',
+      },
+    ],
+  },
+  {
     slug: 'patch-2-save-multiplayer-fixes',
     path: '/guides/patch-2-save-multiplayer-fixes',
     title: 'Cat Mail Co Patch #2: Save and Multiplayer Fixes',
