@@ -71,6 +71,76 @@ const videos = {
 
 export const guides: Guide[] = [
   {
+    slug: 'patch-2-save-multiplayer-fixes',
+    path: '/guides/patch-2-save-multiplayer-fixes',
+    title: 'Cat Mail Co Patch #2: Save and Multiplayer Fixes',
+    seoTitle: 'Cat Mail Co Patch #2 - Save & Multiplayer Fixes',
+    seoDescription:
+      'Review Cat Mail Co Patch #2 fixes for saves, invited guests, achievements, lobbies, parcel piles, shift summaries and boat storage.',
+    summary:
+      'Patch #2 improves boat storage and late-pile pacing while fixing several save, invited-guest, lobby, achievement and shift-summary problems.',
+    category: 'Safety',
+    difficulty: 'Status',
+    coverImageUrl: steamScreenshot,
+    publishedAt: '2026-07-17',
+    updatedAt: '2026-07-17',
+    sourceStrategy: 'official',
+    videoSearchQueries: [
+      'Cat Mail Co Patch Note 2',
+      'Cat Mail Co save fix multiplayer patch',
+    ],
+    sourceNotes:
+      'Summarized from the official July 16 Steam Patch Note #2. No community-only workaround is presented as a confirmed fix.',
+    tags: ['Patch notes', 'Save', 'Multiplayer'],
+    relatedRoutes: ['/co-op', '/walkthrough', '/guides/achievements', '/tips'],
+    body: [
+      {
+        heading: 'Changes to parcel flow and storage',
+        paragraphs: [
+          'Patch #2 adjusts and adds boat storage types, makes the main parcel pile empty faster during its last two levels, and reworks the lovers visual effect so it is easier to understand. A smoke effect now appears when the next stage of the main pile is revealed.',
+          'These are workflow changes rather than a new postal system. Keep destination and processing zones intact, then adjust boat storage only if the new types make the old layout inefficient.',
+        ],
+      },
+      {
+        heading: 'Save and progression fixes',
+        paragraphs: [
+          'The patch fixes demo saves loading with an unexpectedly large main parcel pile, cases where the main pile stopped spawning parcels, and save-slot playtime failing to display correctly beyond 24 hours. It also fixes rare soft locks in the shift summary.',
+          'After updating, load the existing save before starting over. If the save previously failed around a parcel pile or summary screen, keep a backup and verify the affected transition once before reorganizing the whole post office.',
+        ],
+      },
+      {
+        heading: 'Multiplayer and achievement fixes',
+        paragraphs: [
+          'Invited guests can now unlock the All cleaned up achievement correctly. The official note says an affected player can load the save where the condition occurred to trigger the unlock. The patch also fixes invited guests seeing an old postman who should no longer be present.',
+          'Lobby cleanup is more reliable when a player leaves, and counters should no longer open unexpectedly when somebody disconnects during dusk or dawn. These fixes improve co-op state handling, but all players should still run the same current version before troubleshooting an invitation.',
+        ],
+        bullets: [
+          'Update and restart Steam for every player.',
+          'Load the affected save to retry All cleaned up.',
+          'Recreate the lobby if a player disconnects during a transition.',
+          'Keep the original save until the fixed transition succeeds.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'Did Patch #2 fix Cat Mail Co multiplayer achievements?',
+        answer:
+          'It fixes All cleaned up for invited guests. Load the affected save after updating to retry the unlock.',
+      },
+      {
+        question: 'Did Cat Mail Co fix saves with too many parcels?',
+        answer:
+          'Patch #2 fixes a demo-save issue that could load the main pile with a very large number of parcels.',
+      },
+      {
+        question: 'Should I start a new save after Patch #2?',
+        answer:
+          'No. Test the existing save first and preserve a backup until the previously affected transition works.',
+      },
+    ],
+  },
+  {
     slug: 'beginner-guide',
     path: '/guides/beginner-guide',
     title: 'Cat Mail Co Beginner Guide: Your First Post Office Routine',

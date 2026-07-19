@@ -1,6 +1,6 @@
 import type { DataSource, GameFact, KeywordMatrixItem } from './types';
 
-export const checkedAt = '2026-07-11';
+export const checkedAt = '2026-07-17';
 
 export const siteFacts = {
   siteName: 'Cat Mail Co.',
@@ -61,6 +61,14 @@ export const gameFacts: GameFact[] = [
 ];
 
 export const sourceList: DataSource[] = [
+  {
+    type: 'official',
+    label: 'Official Patch Note #2',
+    url: 'https://steamcommunity.com/games/4380490/announcements/detail/1838407329256712',
+    checkedAt,
+    confidence: 'high',
+    note: 'Primary source for the July 16 save, parcel-pile, multiplayer, achievement, lobby and boat-storage fixes.',
+  },
   {
     type: 'official',
     label: 'Cat Mail Co. Steam store',
