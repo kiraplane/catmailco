@@ -156,10 +156,10 @@ const coreModules = [
 ] as const;
 
 const homeTrailer = {
-  title: 'Cat Mail Co release trailer',
-  embedUrl: 'https://www.youtube-nocookie.com/embed/RupCdoMTOZ4?rel=0&hl=en',
-  watchUrl: 'https://www.youtube.com/watch?v=RupCdoMTOZ4',
-  thumbnailUrl: 'https://i.ytimg.com/vi/RupCdoMTOZ4/hqdefault.jpg',
+  title: 'Cat Mail Co official release trailer',
+  embedUrl: 'https://www.youtube-nocookie.com/embed/abAd17fXbA0?rel=0&hl=en',
+  watchUrl: 'https://www.youtube.com/watch?v=abAd17fXbA0',
+  thumbnailUrl: 'https://i.ytimg.com/vi/abAd17fXbA0/hqdefault.jpg',
 };
 
 export function CatMailCoHomePage({ locale }: { locale?: Locale }) {

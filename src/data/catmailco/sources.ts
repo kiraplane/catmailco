@@ -1,6 +1,6 @@
 import type { DataSource, GameFact, KeywordMatrixItem } from './types';
 
-export const checkedAt = '2026-07-19';
+export const checkedAt = '2026-07-20';
 
 export const siteFacts = {
   siteName: 'Cat Mail Co.',
@@ -120,7 +120,7 @@ export const sourceList: DataSource[] = [
   {
     type: 'youtube',
     label: 'Release trailer',
-    url: 'https://www.youtube.com/watch?v=RupCdoMTOZ4',
+    url: 'https://www.youtube.com/watch?v=abAd17fXbA0',
     checkedAt,
     confidence: 'high',
     note: 'Homepage trust video for the current release, art direction, package loop, and Cat Island setting.',
