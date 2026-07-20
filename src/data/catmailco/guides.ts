@@ -649,7 +649,7 @@ export const guides: Guide[] = [
     difficulty: 'Intermediate',
     coverImageUrl: videos.walkthrough.thumbnailUrl,
     publishedAt,
-    updatedAt: publishedAt,
+    updatedAt: '2026-07-20',
     sourceStrategy: 'user_intent_youtube',
     videoSearchQueries: [
       'Cat Mail Co walkthrough',
@@ -702,6 +702,20 @@ export const guides: Guide[] = [
           'Before ending a session, record the next unresolved job physically: leave it alone on the exception shelf or at a dedicated backlog start point. Clear all unrelated work surfaces. The next session can then begin with one known action instead of a room-sized mystery.',
         ],
       },
+      {
+        heading: 'Break room door: keep processing the visible backlog',
+        paragraphs: [
+          'If you have already used the key on the visible break room doorframe and the room still appears blocked, keep clearing the backlog pile in controlled batches. Community reports describe the door as being hidden behind that physical pile rather than unlocked by a separate menu or secret download.',
+          'Serving customers and advancing the work cycle can surface more parcels, so keep the daily lane usable while reducing the pile. Do not restart the save or assume the key failed until the visible obstruction has been processed and the current patch has had a full work cycle to update the room.',
+          'Some searches use names such as Revealuna for late-game discoveries, but this guide does not treat an unverified community label as an official location or route condition. Follow the live objective text and record the exact package, room, and patch before comparing another player’s result.',
+        ],
+        bullets: [
+          'Use the key only on the visible break room doorframe.',
+          'Clear backlog parcels without blocking the daily mail lane.',
+          'Serve customers and advance time when no new parcel is available.',
+          'Retest after a full work cycle before reporting a broken save.',
+        ],
+      },
     ],
     faq: [
       {
@@ -718,6 +732,11 @@ export const guides: Guide[] = [
         question: 'Where can I see a full gameplay route?',
         answer:
           'The embedded Zhain Gaming walkthrough is a current full-release visual cross-check. Use the live game for patch-current details.',
+      },
+      {
+        question: 'Why is the break room still blocked after using the key?',
+        answer:
+          'Keep processing the visible backlog pile and advance the normal customer cycle. The door can remain physically hidden until that obstruction is cleared.',
       },
     ],
   },
@@ -1287,11 +1306,19 @@ export const guides: Guide[] = [
     updatedAt: publishedAt,
     sourceStrategy: 'community_crosscheck',
     video: videos.sorting,
-    videoSearchQueries: ['Cat Mail Co parcel types', 'Cat Mail Co sorting guide'],
+    videoSearchQueries: [
+      'Cat Mail Co parcel types',
+      'Cat Mail Co sorting guide',
+    ],
     sourceNotes:
       'Parcel properties were organized from current gameplay videos and the special-room systems consistently documented by competing wikis.',
     tags: ['Parcels', 'Sorting', 'Labels'],
-    relatedRoutes: ['/guides/package-sorting', '/special-rooms', '/boat-destinations', '/tips'],
+    relatedRoutes: [
+      '/guides/package-sorting',
+      '/special-rooms',
+      '/boat-destinations',
+      '/tips',
+    ],
     body: [
       {
         heading: 'Read properties before choosing a station',
@@ -1321,15 +1348,24 @@ export const guides: Guide[] = [
       },
     ],
     faq: [
-      { question: 'How do I identify a parcel type?', answer: 'Read destination, weight, postage, and every handling icon before stamping or storing it.' },
-      { question: 'Where should unclear parcels go?', answer: 'Use one visible exception shelf until the label or required room is understood.' },
+      {
+        question: 'How do I identify a parcel type?',
+        answer:
+          'Read destination, weight, postage, and every handling icon before stamping or storing it.',
+      },
+      {
+        question: 'Where should unclear parcels go?',
+        answer:
+          'Use one visible exception shelf until the label or required room is understood.',
+      },
     ],
   },
   {
     slug: 'special-rooms',
     path: '/special-rooms',
     title: 'Cat Mail Co Special Rooms Guide',
-    seoTitle: 'Cat Mail Co Special Rooms - Cold, Heated, Repair, Dark and Light',
+    seoTitle:
+      'Cat Mail Co Special Rooms - Cold, Heated, Repair, Dark and Light',
     seoDescription:
       'Use Cat Mail Co cold, heated, repair, dark and light rooms with a clean exception route and co-op room ownership.',
     summary:
@@ -1341,11 +1377,19 @@ export const guides: Guide[] = [
     updatedAt: publishedAt,
     sourceStrategy: 'community_crosscheck',
     video: videos.organizing,
-    videoSearchQueries: ['Cat Mail Co special rooms', 'Cat Mail Co cold heated repair room'],
+    videoSearchQueries: [
+      'Cat Mail Co special rooms',
+      'Cat Mail Co cold heated repair room',
+    ],
     sourceNotes:
       'Room categories were cross-checked across current gameplay and exact-match competitor databases; exact timings remain update-sensitive.',
     tags: ['Rooms', 'Exceptions', 'Workflow'],
-    relatedRoutes: ['/parcel-types', '/guides/night-shift', '/co-op', '/walkthrough'],
+    relatedRoutes: [
+      '/parcel-types',
+      '/guides/night-shift',
+      '/co-op',
+      '/walkthrough',
+    ],
     body: [
       {
         heading: 'Match the icon, not the parcel color',
@@ -1375,8 +1419,16 @@ export const guides: Guide[] = [
       },
     ],
     faq: [
-      { question: 'Are special rooms storage?', answer: 'No. They process exception properties; finished parcels should return to normal destination storage.' },
-      { question: 'Can one parcel need more than one room?', answer: 'Read every current handling property and complete each required state before outbound sorting.' },
+      {
+        question: 'Are special rooms storage?',
+        answer:
+          'No. They process exception properties; finished parcels should return to normal destination storage.',
+      },
+      {
+        question: 'Can one parcel need more than one room?',
+        answer:
+          'Read every current handling property and complete each required state before outbound sorting.',
+      },
     ],
   },
   {
@@ -1395,11 +1447,19 @@ export const guides: Guide[] = [
     updatedAt: publishedAt,
     sourceStrategy: 'user_intent_youtube',
     video: videos.walkthrough,
-    videoSearchQueries: ['Cat Mail Co boat destinations', 'Cat Mail Co loading mail'],
+    videoSearchQueries: [
+      'Cat Mail Co boat destinations',
+      'Cat Mail Co loading mail',
+    ],
     sourceNotes:
       'The route focuses on the destination workflow visible in current full-game walkthroughs; destination names should be read from the live label.',
     tags: ['Boat', 'Destinations', 'Loading'],
-    relatedRoutes: ['/parcel-types', '/guides/package-sorting', '/walkthrough', '/co-op'],
+    relatedRoutes: [
+      '/parcel-types',
+      '/guides/package-sorting',
+      '/walkthrough',
+      '/co-op',
+    ],
     body: [
       {
         heading: 'Create a zone for every active destination',
@@ -1427,8 +1487,16 @@ export const guides: Guide[] = [
       },
     ],
     faq: [
-      { question: 'How do I avoid loading the wrong boat?', answer: 'Match parcel, staging-zone, and outbound destination labels before every load.' },
-      { question: 'Should unfinished mail be staged by destination?', answer: 'No. Keep unfinished mail in a separate exception or work-in-progress area.' },
+      {
+        question: 'How do I avoid loading the wrong boat?',
+        answer:
+          'Match parcel, staging-zone, and outbound destination labels before every load.',
+      },
+      {
+        question: 'Should unfinished mail be staged by destination?',
+        answer:
+          'No. Keep unfinished mail in a separate exception or work-in-progress area.',
+      },
     ],
   },
   {
@@ -1479,8 +1547,16 @@ export const guides: Guide[] = [
       },
     ],
     faq: [
-      { question: 'Where can I see exact achievement names?', answer: 'Use the current Steam achievement list for the exact names and unlock state.' },
-      { question: 'What if an achievement does not unlock?', answer: 'Complete the shift, allow platform sync, then retry once and report the version/save context if it still fails.' },
+      {
+        question: 'Where can I see exact achievement names?',
+        answer:
+          'Use the current Steam achievement list for the exact names and unlock state.',
+      },
+      {
+        question: 'What if an achievement does not unlock?',
+        answer:
+          'Complete the shift, allow platform sync, then retry once and report the version/save context if it still fails.',
+      },
     ],
   },
 ];
